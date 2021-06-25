@@ -1,0 +1,1148 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Playfair Display', serif;
+}
+  
+  body {
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(ellipse at center, #1b2749 0%, #090a0f 80%);
+    overflow: hidden;
+  }
+  
+  .container {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    position: relative;
+  }
+
+// Form da tela de login input e botão
+
+.box-login{
+  width: 100%;
+  padding: 30px;
+  background: black;
+  text-align: center;
+}
+
+.box-login .NomeLogo{
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.Email-login{
+  position: absolute;
+  right: 30%;
+  top: -1%;
+}
+
+.InputSenha{
+  position: absolute;
+  right: 9%;
+  top: -1%;
+}
+
+.box-login .Email-login[type = "text"],.box-login .InputSenha[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 7px 7px;
+  width: 17%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box-login .Email-login[type = "text"]:focus,.box-login .InputSenha[type = "password"]:focus{
+  width: 20%;
+  border-color: #ff4444;
+}
+
+.botaologin{
+  position: absolute;
+  top: -1%;
+  right: 2%;
+}
+.box-login .botaologin[type = "submit"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid #ff4444;
+  padding: 8px 15px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+}
+.box-login .botaologin[type = "submit"]:hover{
+  background: white;
+  color: black;
+}
+
+// Fim 
+
+// Imagem Logo  e label
+
+b{
+  font-size: 30px;
+  position: absolute;
+  left: 5%;
+  top: 1%;
+  color: #fee;
+	text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff4444, 0 0 0.5em #ff4444, 0 0 0.1em #ff4444, 0 10px 3px #000;
+} 
+
+b span{
+	animation: blink linear infinite 2s;  
+}
+
+b span:nth-of-type(2){
+	animation: blink linear infinite 3s;
+}
+  
+@keyframes blink {
+  
+  78% {
+	  color: inherit;
+	  text-shadow: inherit;
+   }
+   
+	79%{
+	   color: #333;
+  }
+  
+	80% { 
+	  text-shadow: none;
+   }
+   
+	81% {
+	  color: inherit;
+	  text-shadow: inherit;
+   }
+   
+	82% {
+	  color: #333;
+	  text-shadow: none;
+   }
+
+	83% {
+	  color: inherit;
+	  text-shadow: inherit;
+   }
+   
+	92% {
+	  color: #333;
+	  text-shadow: none;
+   }
+   
+	92.5% {
+	  color: inherit;
+	  text-shadow: inherit;
+	 }
+  }
+
+// Fim do nome logo
+
+.ImagemLogo{
+  width: 50px;
+  height: 62px;
+  left: 0%;
+  top: 0%;
+  position: absolute;
+}
+
+// Cadastro 
+
+// Titulo 
+
+.Titulocadastro{
+  color: white;
+  font-size: 40px;
+  position: absolute;
+  top: -20%;
+  right: 25%;
+  font-weight: bold;
+  
+}
+
+// Fim
+
+// Sub-Titulo 
+
+.Subcadastro{
+  color: rgb(211, 211, 211);
+  font-size: 20px;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  font-weight: bold;
+}
+
+// Fim
+
+
+.box-cadastro{
+  width: 40%;
+  padding: 30px;
+  position: absolute;
+  top:20%;
+  right: 5%;
+  background: none;
+  text-align: center;
+}
+
+
+// Input geral de cadastro
+.box-cadastro .Inputgeral[type = "text"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 15px 7px;
+  width: 90%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box-cadastro .Inputgeral[type = "text"]:focus{
+  width: 80%;
+  border-color: black;
+}
+
+// Fim
+
+// Input senha e confirmar senha cadastro
+.InputConfsenhac{
+  position: absolute;
+  top: 75%;
+  right: 10%;
+  }
+  
+  .Inputsenhac{
+    position: absolute;
+    top: 75%;
+    right: 51%;
+    
+  }
+
+.box-cadastro .Inputsenhac[type = "password"],.box-cadastro .InputConfsenhac[type = "password"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 15px 7px;
+  width: 39%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+}
+
+.box-cadastro .Inputsenhac[type = "password"]:focus,.box-cadastro .InputConfsenhac[type = "password"]:focus{
+  width: 35%;
+  border-color: black;
+}
+// Fim
+
+// Data de nascimento 
+
+.DataLabel{
+  position: absolute;
+  font-size: 24px;
+  top: 115%;
+  right: 49%;
+  color:rgb(211, 211, 211);
+}
+
+.InputData{
+  position: absolute;
+  top: 125%;
+  right: 50%;
+  color: rgb(211, 211, 211);
+}
+
+.box-cadastro .InputData[type = "date"]{
+  border:0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 15px 7px;
+  width: 39%;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box-cadastro .InputData[type = "date"]:focus{
+  border-color: black;
+}
+
+// Fim
+
+// Genero cadastro
+
+.GeneroDiv{
+  position: absolute;
+  top: 170%;
+  right:25%;
+}
+
+.NomeGenero{
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-right: 75%;
+  color:rgb(211, 211, 211);
+}
+
+.LabelGenero{
+  font-size: 18px;
+  color:rgb(255, 255, 255);
+  margin-left: 2px;
+}
+
+.GeneroInput{
+  background: black;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+
+
+// Fim
+
+// 
+
+.botaocadastro{
+  position: absolute;
+  bottom: -145%;
+  right: 62%;
+}
+.box-cadastro .botaocadastro[type = "submit"]{
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid white;
+  padding: 13px 40px;
+  outline: none;
+  color: white;
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+}
+.box-cadastro .botaocadastro[type = "submit"]:hover{
+  background: black;
+  color: white;
+}
+
+// Fim
+
+// Play vídeo 
+
+.play{
+  position: absolute;
+  display: inline-flex;
+  justify-content: flex-start;
+  align-items: center;
+  color:#fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1,2em;
+}
+
+.play .imagemplay{
+margin-right:10px;
+max-width: 50px;
+}
+
+.pitch{
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% -250px /2);
+  width: 250px;
+  height: 150px;
+  background: url(pitch.png);
+  background-size: cover;
+  cursor: pointer;
+  animation: pitch 25s linear infinite;
+}
+
+@keyframes pitch{
+  0%, 100%{
+    background-position: top;
+  }
+  45%,55%{
+    background-position: top;
+  }
+}
+// Fim
+
+// Vídeo 
+
+.trailer{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: rgb(0, 0, 0);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility:  hidden;
+  opacity: 0;
+}
+
+.trailer .active{
+  visibility:  hidden;
+  opacity: 0;
+}
+
+.trailer .Apresentacao{
+  max-width: 900px;
+  outline: none;
+}
+
+.trailer .close{
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  filter: invert(1);
+  max-width: 32px;
+}
+// Fim
+
+// Balão 
+
+.balao{
+	position: absolute; /* or relative */
+	width: 250px;
+  height: 120px;
+  top: 20%;
+  left: 18%;
+	text-align: center;
+	line-height: 30px;
+        color: black;
+	background-color: white;
+	border: 2px solid black;
+	-webkit-border-radius: 30px;
+	-moz-border-radius: 30px;
+	border-radius: 30px;
+  box-shadow: 1px 2px 7px #d5d5d5;
+  animation-name: texto;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  font-size: 20px;
+  z-index: 5;
+}
+@keyframes texto{
+  0%{
+    top: 15%;
+  }
+  50%{
+    top: 20%;
+  }
+  
+  100%{
+    top: 15%;
+  }
+ 
+ }
+
+.balao:before{
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100%;
+  background: none;
+  border: 10px solid;
+  border-color: black transparent transparent black;
+}
+
+.balao:after
+{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+  left: 30px;
+  top: 100%;
+	border: 10px solid;
+	border-color: #fff transparent transparent #fff;
+}
+
+// Fim
+
+
+// Yoda 
+
+:root {
+  --bg: #E2FFED;
+  --yoda: #9ed290;
+  --yoda-luz: #8cbd7f;
+  --yoda-sobra: #5b7a52;
+  --caps-luz: black;
+  --luz: black;
+  --caps-dark: #7F8382;
+  --caps-sobra: black;
+  --caps-preto: black;
+  --pled: #A4A9A8;
+  --estrela: #ff4444;
+  --sobra: #45576B;
+  --borda: black;
+  --olho: #4e433b;
+}
+
+.wrap {
+  position: absolute;
+  top: 90%;
+  left: -5%;
+  animation-name: cair;
+  animation-duration: 4s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+  .blick2 {
+      width: 15px;
+      height: 20px;
+      position: absolute;
+      top: 8rem;
+      left: 8rem;
+      filter: drop-shadow(22rem -15px 0 var(--estrela)) drop-shadow(1rem 15rem 0 var(--estrela));
+
+      &::before {
+          content: '';
+          width: 2px;
+          height: 15px;
+          border-radius: 5px;
+          background: var(--estrela);
+          position: absolute;
+          top: 5px;
+          left: 6px;
+      }
+
+      &::after {
+          content: '';
+          width: 10px;
+          height: 2px;
+          border-radius: 5px;
+          background: var(--estrela);
+          position: absolute;
+          top: 12px;
+          left: 2px;
+      }
+  }
+
+  .blick3 {
+      width: 10px;
+      height: 10px;
+      background: transparent;
+      border: 2px solid var(--estrela);
+      border-radius: 50%;
+      position: absolute;
+      top: 7rem;
+      left: 28.5rem;
+      filter: drop-shadow(-22.5rem 6rem 0 var(--estrela)) drop-shadow(2rem 12.5rem 0 var(--estrela));
+  }
+
+  .blick4 {
+      width: 7px;
+      height: 7px;
+      background: var(--estrela);
+      border-radius: 50%;
+      box-shadow: -5rem -2rem 0 -1px var(--estrela), -27rem 4rem 0 -1px var(--estrela), -2rem 14rem 0 0 var(--estrela), -24rem 11rem 0 0 var(--estrela), -21rem 17rem 0 -1px var(--estrela);
+      position: absolute;
+      top: 7rem;
+      left: 31.5rem;
+  }
+}
+
+@keyframes cair{
+  0%{
+    top: 15%;
+  }
+  50%{
+    top: 20%;
+  }
+  
+  100%{
+    top: 15%;
+  }
+ 
+ }
+
+
+.capsule {
+  &__bottom {
+      width: 20rem;
+      height: 20.5rem;
+      background: linear-gradient(to bottom, var(--caps-dark) 0%,var(--caps-dark) 50%,var(--caps-preto) 51%,var(--caps-preto) 100%);
+      border-radius: 100%;
+      border: 5px solid var(--borda);
+      box-shadow: 0 -10px 0 0px var(--caps-luz), 0 -12px 0 2px var(--borda);
+      position: absolute;
+      top: 5rem;
+      left: 8.7rem;
+      z-index: 2;
+
+      .panel {
+          width: 19.5rem;
+          height: 3rem;
+          background: var(--caps-luz);
+          border: 5px solid var(--borda);
+          border-radius: 0 0 40% 40%;
+          box-shadow: inset 0 5px 0 0 var(--caps-dark), inset 0 9px 0 0 var(--borda), -2px 9px 0 -3px var(--caps-preto);
+          position: absolute;
+          top: 9.4rem;
+          left: 0;
+          z-index: 1;
+
+          &::before {
+              content: '';
+              width: 5rem;
+              height: 1.3rem;
+              background: var(--caps-luz);
+              border: 4px solid var(--borda);
+              border-radius: 4px;
+              position: absolute;
+              top: 11px;
+              left: 6.8rem;
+          }
+
+          &::after {
+              content: '';
+              width: 12px;
+              height: 12px;
+              background: var(--estrela);
+              border: 3px solid var(--borda);
+              box-shadow: 25px 0 0 -3px var(--estrela), 25px 0 0 0 var(--borda), 50px 0 0 -3px var(--estrela), 50px 0 0 0 var(--borda);
+              border-radius: 4px;
+              position: absolute;
+              top: 16px;
+              left: 7.5rem;
+          }
+      }
+
+      .light {
+          background: var(--luz);
+          height: 5rem;
+          width: 11rem;
+          position: absolute;
+          top: 207px;
+          left: 160px;
+          border-radius: 100% 100% 0 0;
+          transform: rotate(131deg);
+
+          &::before {
+              content: '';
+              height: 5rem;
+              width: 4rem;
+              border-radius: 0 0 100% 100%;
+              background: var(--luz);
+              position: absolute;
+              top: 55px;
+              left: 112px;
+          }
+
+          &::after {
+              content: '';
+              height: 5rem;
+              width: 3rem;
+              background: var(--luz);
+              transform: rotate(135deg);
+              position: absolute;
+              top: 42px;
+              left: 90px;
+          }
+      }
+
+      .light2 {
+          background: var(--luz);
+          height: 4.5rem;
+          width: 4.5rem;
+          position: absolute;
+          top: 218px;
+          left: 112px;
+          border-radius: 100%;
+
+          &::before {
+              content: '';
+              background: var(--luz);
+              height: 3rem;
+              transform: rotate(27deg);
+              width: 7rem;
+              position: absolute;
+              top: 42px;
+              left: -1px;
+              border-radius: 100%;
+          }
+
+          &::after {
+              content: '';
+              background: transparent;
+              height: 5rem;
+              width: 11rem;
+              border-radius: 0 0 50% 50%;
+              box-shadow: 0px 12px 0 -8px white;
+              transform: rotate(-31deg);
+              position: absolute;
+              top: 3px;
+              left: 13px;
+          }
+      }
+  }
+
+  &__top {
+      width: 16rem;
+      height: 5.5rem;
+      background: var(--sobra);
+      border: 5px solid var(--borda);
+      border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+      box-shadow: 0 -9px 0 0 var(--caps-dark), 0 -9px 0 4px var(--borda);
+      position: absolute;
+      top: 8.9rem;
+      left: 10.7rem;
+      z-index: 3;
+
+      &::before {
+          content: '';
+          width: 2.5rem;
+          height: 8px;
+          background: var(--caps-luz);
+          border: 3px solid var(--borda);
+          border-top: 0;
+          border-radius: 4px;
+          transform: rotate(-30deg);
+          position: absolute;
+          top: -2.95rem;
+          left: 1.7rem;
+      }
+
+      &::after {
+          content: '';
+          width: 2.5rem;
+          height: 8px;
+          background: var(--caps-luz);
+          border: 3px solid var(--borda);
+          border-top: 0;
+          border-radius: 4px;
+          transform: rotate(28deg);
+          position: absolute;
+          top: -3.1rem;
+          left: 11.2rem;
+      }
+  }
+
+  &__shadow {
+      &::before {
+          content: '';
+          width: 2.6rem;
+          height: 3.7rem;
+          background: var(--caps-sobra);
+          transform: rotate(-30deg);
+          position: absolute;
+          top: 6.5rem;
+          left: 13.9rem;
+          z-index: 2;
+      }
+
+      &::after {
+          content: '';
+          width: 2.6rem;
+          height: 3.7rem;
+          background: var(--caps-sobra);
+          transform: rotate(28deg);
+          position: absolute;
+          top: 6.5rem;
+          left: 21.3rem;
+          z-index: 2;
+      }
+  }
+
+  .left-circle {
+      width: 18px;
+      height: 30px;
+      background: var(--estrela);
+      border: 8px solid var(--borda);
+      box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), 12px 0 0 17px var(--caps-dark), 21px 0 0 20px var(--borda);
+      border-radius: 50%;
+      transform: rotateY(70deg);
+      position: absolute;
+      top: 13.5rem;
+      left: 7.6rem;
+      z-index: 4;
+
+      &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-left: 30px solid transparent;
+          border-right: 0;
+          border-bottom: 12px solid var(--caps-dark);
+          filter: drop-shadow(-5px -1px 0 var(--borda));
+          transform: rotate(13deg);
+          position: absolute;
+          top: -34px;
+          left: 11px;
+      }
+  }
+
+  .right-circle {
+      width: 18px;
+      height: 30px;
+      background: var(--estrela);
+      border: 8px solid var(--borda);
+      box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), -12px 0 0 17px var(--caps-dark), -21px 0 0 20px var(--borda);
+      border-radius: 50%;
+      transform: rotateY(70deg);
+      position: absolute;
+      top: 13.5rem;
+      left: 28.3rem;
+      z-index: 4;
+
+      &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-left: 21px solid transparent;
+          border-right: 0;
+          border-bottom: 15px solid var(--caps-dark);
+          filter: drop-shadow(-5px -1px 0 var(--borda));
+          transform: rotate(59deg);
+          position: absolute;
+          top: -37px;
+          left: -26px;
+      }
+  }
+}
+
+.yoda-wrap {
+  width: 16rem;
+  height: 6rem;
+  position: absolute;
+  top: 9rem;
+  left: 11rem;
+  z-index: 4;
+
+  .hair {
+      width: 25px;
+      height: 20px;
+      position: absolute;
+      top: 0.5rem;
+      left: 8rem;
+
+      &::before,
+      &::after {
+          content: '';
+          width: 4px;
+          height: 15px;
+          background: var(--borda);
+          transform: rotate(-15deg);
+          border-radius: 5px;
+          position: absolute;
+          top: 5px;
+          left: 4px;
+      }
+
+      &::after {
+          transform: rotate(15deg);
+          left: 9px;
+          top: 4px;
+      }
+  }
+
+  .yoda {
+      width: 6.5rem;
+      height: 3rem;
+      border-radius: 20px 20px 0 0;
+      background: var(--yoda);
+      box-shadow: inset -4px 4px 0 0 var(--yoda-luz);
+      filter: drop-shadow(0px -4px 0 var(--borda)) drop-shadow(4px 1px 0 var(--borda)) drop-shadow(-4px 1px 0 var(--borda));
+      position: absolute;
+      top: 29px;
+      left: 75px;
+
+      &::before {
+          content: '';
+          width: 4rem;
+          height: 2rem;
+          border-radius: 50%;
+          background: var(--yoda);
+          box-shadow: inset 0 7px 0 -4px var(--yoda-luz);
+          position: absolute;
+          top: -6px;
+          left: 19px;
+      }
+
+      &::after {
+          content: '';
+          width: 2rem;
+          height: 2rem;
+          border-radius: 50%;
+          background: var(--yoda);
+          box-shadow: 80px 0 0 0 var(--yoda), inset 6px -6px 0 0 var(--yoda-luz);
+          position: absolute;
+          top: 18px;
+          left: -4px;
+      }
+
+      .brow {
+          filter: drop-shadow(0 -4px 0 var(--yoda-sobra));
+
+          &::before,
+          &::after {
+              content: '';
+              width: 25px;
+              height: 10px;
+              background: var(--yoda);
+              transform: rotate(15deg);
+              border-radius: 50%;
+              position: absolute;
+              top: 8px;
+              left: 30px;
+          }
+
+          &::after {
+              transform: rotate(-15deg);
+              left: 50px;
+          }
+      }
+
+      .eye-left,
+      .eye-right {
+          width: 27px;
+          height: 20px;
+          background: var(--olho);
+          border-radius: 100% 100% 60% 60%;
+          box-shadow: 0px -3px 0 4px var(--yoda-sobra);
+          position: absolute;
+          top: 19px;
+          left: 11px;
+          z-index: 1;
+
+          &::before {
+              content: '';
+              width: 4.5px;
+              height: 4.5px;
+              border-radius: 50%;
+              background: white;
+              box-shadow: -5px 3px 0 -1.5px white;
+              position: absolute;
+              top: 5px;
+              left: 6px;
+          }
+      }
+
+      .eye-right {
+          left: 65px;
+
+          &::after {
+              content: '';
+              width: 15px;
+              height: 4px;
+              border-radius: 10px;
+              background: var(--borda);
+              position: absolute;
+              top: 16px;
+              left: -21px;
+          }
+      }
+
+      .eye-left::after {
+          content: '';
+          width: 5px;
+          height: 14px;
+          border-radius: 10px;
+          background: var(--yoda-luz);
+          position: absolute;
+          top: -3px;
+          left: 37px;
+      }
+  }
+
+  .ear-left {
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-right: 100px solid var(--borda);
+      border-bottom: 25px solid transparent;
+      transform: rotate(-9deg);
+      position: absolute;
+      top: 50px;
+      left: -15px;
+      z-index: -1;
+
+      &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 0 solid transparent;
+          border-right: 80px solid var(--yoda);
+          border-bottom: 15px solid transparent;
+          transform: rotate(-3deg);
+          position: absolute;
+          top: 1px;
+          left: 21px;
+      }
+
+      &::after {
+          content: '';
+          width: 90px;
+          height: 12px;
+          background: var(--borda);
+          border-radius: 35%;
+          transform: rotate(20deg);
+          position: absolute;
+          top: 8px;
+          left: 0;
+      }
+
+      .line {
+          width: 60px;
+          height: 20px;
+          background: var(--borda);
+          border-radius: 50%;
+          transform: rotate(-2deg);
+          position: absolute;
+          top: 7px;
+          left: 50px;
+
+          &::before {
+              content: '';
+              width: 10px;
+              height: 8px;
+              background: var(--yoda-sobra);
+              border-top-left-radius: 5px;
+              transform: rotate(-2deg);
+              position: absolute;
+              top: -8px;
+              left: 29px;
+          }
+      }
+  }
+
+  .ear-right {
+      width: 0;
+      height: 0;
+      border-top: 6px solid transparent;
+      border-right: 100px solid var(--borda);
+      border-bottom: 25px solid transparent;
+      transform: rotate(10deg) rotateY(180deg);
+      position: absolute;
+      top: 50px;
+      left: 165px;
+      z-index: -1;
+
+      &::before {
+          content: '';
+          width: 0;
+          height: 0;
+          border-top: 0 solid transparent;
+          border-right: 80px solid var(--yoda);
+          border-bottom: 15px solid transparent;
+          transform: rotate(-3deg);
+          position: absolute;
+          top: 1px;
+          left: 21px;
+      }
+
+      &::after {
+          content: '';
+          width: 90px;
+          height: 12px;
+          background: var(--borda);
+          border-radius: 35%;
+          transform: rotate(20deg);
+          position: absolute;
+          top: 8px;
+          left: 0;
+      }
+
+      .line {
+          width: 60px;
+          height: 20px;
+          background: var(--borda);
+          border-radius: 50%;
+          transform: rotate(-2deg);
+          position: absolute;
+          top: 7px;
+          left: 50px;
+
+          &::before {
+              content: '';
+              width: 10px;
+              height: 8px;
+              background: var(--yoda-sobra);
+              border-top-left-radius: 5px;
+              transform: rotate(-2deg);
+              position: absolute;
+              top: -8px;
+              left: 29px;
+          }
+      }
+  }
+
+  .pled1 {
+      width: 8rem;
+      height: 15px;
+      background: var(--caps-dark);
+      transform: skewX(-60deg);
+      border-radius: 35% 40% 0 0;
+      box-shadow: inset 0 4px 0 0 var( --pled), inset 15px 0 0 0 var(--caps-sobra), -7px -2px 0 2px var(--borda), 2px -1px 0 2px var(--caps-sobra);
+      position: absolute;
+      top: 76px;
+      left: 25px;
+      z-index: 4;
+  }
+
+  .pled2 {
+      width: 6rem;
+      height: 22px;
+      background: var(--caps-dark);
+      border-radius: 100% 20% 0 0 / 100% 100% 0 0;
+      box-shadow: inset -4px 3px 0 0 var(--pled), inset -12px 5px 0 0 var(--caps-sobra), 4px -2px 0 2px var(--borda);
+      position: absolute;
+      top: 69px;
+      left: 130px;
+      z-index: 3;
+  }
+}
+
+// fim
+
+
+

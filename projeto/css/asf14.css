@@ -1,0 +1,3196 @@
+@charset "UTF-8";
+/* Gabriel aqui */
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap");
+:root {
+  --espada: #a9a9a9;
+  --cabodaespada: #523772;
+  --Dark: #1f2029;
+  --Papel: #dce3e4;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  background: var(--Papel);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+.Containea {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.box-login {
+  width: 100%;
+  padding: 40px;
+  background: var(--Dark);
+  text-align: center;
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+}
+
+.box-login .NomeLogo {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+.Email-login {
+  position: absolute;
+  right: 30%;
+  top: 0%;
+}
+
+.InputSenha {
+  position: absolute;
+  right: 9%;
+  top: 0%;
+}
+
+.box-login .Email-login[type="text"], .box-login .InputSenha[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--espada);
+  padding: 6px 6px;
+  width: 17%;
+  outline: none;
+  color: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.box-login .Email-login[type="text"]:focus, .box-login .InputSenha[type="password"]:focus {
+  width: 20%;
+  border-color: var(--Papel);
+}
+
+.botaologin {
+  position: absolute;
+  top: 0%;
+  right: 2%;
+}
+
+.box-login .botaologin[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 6px 15px;
+  outline: none;
+  color: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.box-login .botaologin[type="submit"]:hover {
+  background: var(--Papel);
+  color: var(--Dark);
+}
+
+b {
+  font-size: 32px;
+  position: absolute;
+  left: 5%;
+  top: 2%;
+  color: var(--Papel);
+  text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em var(--cabodaespada), 0 0 0.5em var(--cabodaespada), 0 0 0.1em var(--cabodaespada), 0 10px 3px #000;
+}
+
+b span {
+  -webkit-animation: blink linear infinite 2s;
+          animation: blink linear infinite 2s;
+}
+
+b span:nth-of-type(2) {
+  -webkit-animation: blink linear infinite 3s;
+          animation: blink linear infinite 3s;
+}
+
+b span:nth-of-type(3) {
+  -webkit-animation: blink linear infinite 4s;
+          animation: blink linear infinite 4s;
+}
+
+b span:nth-of-type(4) {
+  -webkit-animation: blink linear infinite 4s;
+          animation: blink linear infinite 4s;
+}
+
+@-webkit-keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: var(--Papel);
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: var(--Dark);
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: var(--Dark);
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+@keyframes blink {
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  79% {
+    color: var(--Papel);
+  }
+  80% {
+    text-shadow: none;
+  }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  82% {
+    color: var(--Dark);
+    text-shadow: none;
+  }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+  92% {
+    color: var(--Dark);
+    text-shadow: none;
+  }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
+}
+
+.ImagemLogo {
+  width: 50px;
+  height: 60px;
+  left: 0%;
+  top: 1%;
+  position: absolute;
+}
+
+.Titulocadastro {
+  color: var(--Dark);
+  font-size: 40px;
+  position: absolute;
+  top: -20%;
+  right: 25%;
+  font-weight: bold;
+}
+
+.Subcadastro {
+  color: var(--Dark);
+  font-size: 20px;
+  position: absolute;
+  top: 7%;
+  right: 10%;
+  font-weight: bold;
+}
+
+.box-cadastro {
+  width: 40%;
+  padding: 30px;
+  position: absolute;
+  top: 20%;
+  right: 5%;
+  background: none;
+  text-align: center;
+}
+
+.box-cadastro .Inputgeral[type="text"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--espada);
+  padding: 15px 7px;
+  width: 90%;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.box-cadastro .Inputgeral[type="text"]:focus {
+  width: 80%;
+  border-color: var(--Dark);
+}
+
+.InputConfsenhac {
+  position: absolute;
+  top: 75%;
+  right: 10%;
+}
+
+.Inputsenhac {
+  position: absolute;
+  top: 75%;
+  right: 51%;
+}
+
+.box-cadastro .Inputsenhac[type="password"], .box-cadastro .InputConfsenhac[type="password"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--espada);
+  padding: 15px 7px;
+  width: 39%;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.box-cadastro .Inputsenhac[type="password"]:focus, .box-cadastro .InputConfsenhac[type="password"]:focus {
+  width: 35%;
+  border-color: var(--Dark);
+}
+
+.DataLabel {
+  position: absolute;
+  font-size: 24px;
+  top: 115%;
+  right: 49%;
+  color: var(--Dark);
+}
+
+.InputData {
+  position: absolute;
+  top: 125%;
+  right: 50%;
+  color: var(--espada);
+  font-size: 14px;
+}
+
+.box-cadastro .InputData[type="date"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--espada);
+  padding: 15px 7px;
+  width: 39%;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  cursor: pointer;
+}
+
+.box-cadastro .InputData[type="date"]:focus {
+  border-color: var(--Dark);
+}
+
+.GeneroDiv {
+  position: absolute;
+  top: 170%;
+  right: 25%;
+}
+
+.NomeGenero {
+  font-size: 24px;
+  margin-bottom: 20px;
+  margin-right: 75%;
+  color: var(--Dark);
+}
+
+.LabelGenero {
+  font-size: 18px;
+  color: var(--Dark);
+  margin-left: 2px;
+}
+
+.GeneroInput {
+  background: var(--Dark);
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.botaocadastro {
+  position: absolute;
+  bottom: -145%;
+  right: 62%;
+}
+
+.box-cadastro .botaocadastro[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--espada);
+  padding: 13px 40px;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.box-cadastro .botaocadastro[type="submit"]:hover {
+  background: var(--Dark);
+  color: var(--Papel);
+}
+
+.play {
+  position: absolute;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Dark);
+  text-transform: uppercase;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 2px;
+  font-size: 1,2em;
+}
+
+.play .imagemplay {
+  margin-right: 10px;
+  max-width: 50px;
+}
+
+.pitch {
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% -250px /2);
+  width: 250px;
+  height: 150px;
+  background: url(pitch.png);
+  background-size: cover;
+  cursor: pointer;
+  -webkit-animation: pitch 25s linear infinite;
+          animation: pitch 25s linear infinite;
+}
+
+@-webkit-keyframes pitch {
+  0%, 100% {
+    background-position: top;
+  }
+  45%, 55% {
+    background-position: top;
+  }
+}
+
+@keyframes pitch {
+  0%, 100% {
+    background-position: top;
+  }
+  45%, 55% {
+    background-position: top;
+  }
+}
+
+.trailer {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  z-index: 10000;
+  background: black;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trailer .active {
+  visibility: hidden;
+  opacity: 0;
+}
+
+.trailer .Apresentacao {
+  max-width: 900px;
+  outline: none;
+}
+
+.trailer .close {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  cursor: pointer;
+  -webkit-filter: invert(1);
+          filter: invert(1);
+  max-width: 32px;
+}
+
+.balao {
+  position: absolute;
+  /* or relative */
+  width: 250px;
+  height: 120px;
+  top: 20%;
+  left: 18%;
+  text-align: center;
+  line-height: 30px;
+  color: var(--Dark);
+  background-color: var(--Papel);
+  border: 2px solid var(--Dark);
+  border-radius: 30px;
+  -webkit-box-shadow: 1px 2px 7px var(--Dark);
+          box-shadow: 1px 2px 7px var(--Dark);
+  -webkit-animation-name: texto;
+          animation-name: texto;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  font-size: 20px;
+  z-index: 5;
+}
+
+@-webkit-keyframes texto {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+@keyframes texto {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+.balao:before {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100%;
+  background: none;
+  border: 10px solid;
+  border-color: var(--Dark) transparent transparent var(--Dark);
+}
+
+.balao:after {
+  content: ' ';
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: 30px;
+  top: 100%;
+  border: 10px solid;
+  border-color: var(--Papel) transparent transparent var(--Papel);
+}
+
+:root {
+  --bg: #E2FFED;
+  --yoda: #9ed290;
+  --yoda-luz: #8cbd7f;
+  --yoda-sobra: #5b7a52;
+  --caps-luz: var(--Dark);
+  --luz: var(--Dark);
+  --caps-dark: var(--espada);
+  --caps-sobra: var(--Dark);
+  --caps-preto: var(--Dark);
+  --pled: var(--espada);
+  --estrela: var(--cabodaespada);
+  --sobra: var(--espada);
+  --borda: var(--Dark);
+  --olho: #38302b;
+}
+
+.wrap {
+  position: absolute;
+  top: 90%;
+  left: -5%;
+  -webkit-animation-name: cair;
+          animation-name: cair;
+  -webkit-animation-duration: 4s;
+          animation-duration: 4s;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+}
+
+.wrap .blick2 {
+  width: 15px;
+  height: 20px;
+  position: absolute;
+  top: 8rem;
+  left: 8rem;
+  -webkit-animation: lado 5s infinite alternate;
+          animation: lado 5s infinite alternate;
+  -webkit-filter: drop-shadow(22rem -15px 0 var(--estrela)) drop-shadow(1rem 15rem 0 var(--estrela));
+          filter: drop-shadow(22rem -15px 0 var(--estrela)) drop-shadow(1rem 15rem 0 var(--estrela));
+}
+
+.wrap .blick2::before {
+  content: '';
+  width: 2px;
+  height: 15px;
+  border-radius: 5px;
+  background: var(--estrela);
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+
+@-webkit-keyframes lado {
+  0% {
+    left: 8rem;
+  }
+  50% {
+    left: 9rem;
+  }
+  75% {
+    left: 7rem;
+  }
+  100% {
+    left: 8rem;
+  }
+}
+
+@keyframes lado {
+  0% {
+    left: 8rem;
+  }
+  50% {
+    left: 9rem;
+  }
+  75% {
+    left: 7rem;
+  }
+  100% {
+    left: 8rem;
+  }
+}
+
+.wrap .blick2::after {
+  content: '';
+  width: 10px;
+  height: 2px;
+  border-radius: 5px;
+  background: var(--estrela);
+  position: absolute;
+  top: 12px;
+  left: 2px;
+}
+
+.wrap .blick3 {
+  width: 10px;
+  height: 10px;
+  background: transparent;
+  border: 2px solid var(--estrela);
+  border-radius: 50%;
+  position: absolute;
+  top: 7rem;
+  -webkit-animation: ladobolabranca 4s infinite alternate;
+          animation: ladobolabranca 4s infinite alternate;
+  left: 28.5rem;
+  -webkit-filter: drop-shadow(-22.5rem 6rem 0 var(--estrela)) drop-shadow(2rem 12.5rem 0 var(--estrela));
+          filter: drop-shadow(-22.5rem 6rem 0 var(--estrela)) drop-shadow(2rem 12.5rem 0 var(--estrela));
+}
+
+@-webkit-keyframes ladobolabranca {
+  0% {
+    left: 28.5rem;
+  }
+  50% {
+    left: 29rem;
+  }
+  75% {
+    left: 27.5rem;
+  }
+  100% {
+    left: 28.5rem;
+  }
+}
+
+@keyframes ladobolabranca {
+  0% {
+    left: 28.5rem;
+  }
+  50% {
+    left: 29rem;
+  }
+  75% {
+    left: 27.5rem;
+  }
+  100% {
+    left: 28.5rem;
+  }
+}
+
+.wrap .blick4 {
+  width: 7px;
+  height: 7px;
+  background: var(--estrela);
+  border-radius: 50%;
+  -webkit-box-shadow: -5rem -2rem 0 -1px var(--estrela), -27rem 4rem 0 -1px var(--estrela), -2rem 14rem 0 0 var(--estrela), -24rem 11rem 0 0 var(--estrela), -21rem 17rem 0 -1px var(--estrela);
+          box-shadow: -5rem -2rem 0 -1px var(--estrela), -27rem 4rem 0 -1px var(--estrela), -2rem 14rem 0 0 var(--estrela), -24rem 11rem 0 0 var(--estrela), -21rem 17rem 0 -1px var(--estrela);
+  position: absolute;
+  top: 7rem;
+  -webkit-animation: ladobola 3s infinite alternate;
+          animation: ladobola 3s infinite alternate;
+  left: 31.5rem;
+}
+
+@-webkit-keyframes ladobola {
+  0% {
+    left: 31.5rem;
+  }
+  50% {
+    left: 32rem;
+  }
+  75% {
+    left: 30.5rem;
+  }
+  100% {
+    left: 31.5rem;
+  }
+}
+
+@keyframes ladobola {
+  0% {
+    left: 31.5rem;
+  }
+  50% {
+    left: 32rem;
+  }
+  75% {
+    left: 30.5rem;
+  }
+  100% {
+    left: 31.5rem;
+  }
+}
+
+@-webkit-keyframes cair {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+@keyframes cair {
+  0% {
+    top: 15%;
+  }
+  50% {
+    top: 20%;
+  }
+  100% {
+    top: 15%;
+  }
+}
+
+.capsule__bottom {
+  width: 20rem;
+  height: 20.5rem;
+  background: -webkit-gradient(linear, left top, left bottom, from(var(--caps-dark)), color-stop(50%, var(--caps-dark)), color-stop(51%, var(--caps-preto)), to(var(--caps-preto)));
+  background: linear-gradient(to bottom, var(--caps-dark) 0%, var(--caps-dark) 50%, var(--caps-preto) 51%, var(--caps-preto) 100%);
+  border-radius: 100%;
+  border: 5px solid var(--borda);
+  -webkit-box-shadow: 0 -10px 0 0px var(--caps-luz), 0 -12px 0 2px var(--borda);
+          box-shadow: 0 -10px 0 0px var(--caps-luz), 0 -12px 0 2px var(--borda);
+  position: absolute;
+  top: 5rem;
+  left: 8.7rem;
+  z-index: 2;
+}
+
+.capsule__bottom .panel {
+  width: 19.5rem;
+  height: 3rem;
+  background: var(--caps-luz);
+  border: 5px solid var(--borda);
+  border-radius: 0 0 40% 40%;
+  -webkit-box-shadow: inset 0 5px 0 0 var(--caps-dark), inset 0 9px 0 0 var(--borda), -2px 9px 0 -3px var(--caps-preto);
+          box-shadow: inset 0 5px 0 0 var(--caps-dark), inset 0 9px 0 0 var(--borda), -2px 9px 0 -3px var(--caps-preto);
+  position: absolute;
+  top: 9.4rem;
+  left: 0;
+  z-index: 1;
+}
+
+.capsule__bottom .panel::before {
+  content: '';
+  width: 5rem;
+  height: 1.3rem;
+  background: var(--caps-luz);
+  border: 4px solid var(--borda);
+  border-radius: 4px;
+  position: absolute;
+  top: 11px;
+  left: 6.8rem;
+}
+
+.capsule__bottom .panel::after {
+  content: '';
+  width: 12px;
+  height: 12px;
+  background: var(--estrela);
+  border: 3px solid var(--borda);
+  -webkit-box-shadow: 25px 0 0 -3px var(--estrela), 25px 0 0 0 var(--borda), 50px 0 0 -3px var(--estrela), 50px 0 0 0 var(--borda);
+          box-shadow: 25px 0 0 -3px var(--estrela), 25px 0 0 0 var(--borda), 50px 0 0 -3px var(--estrela), 50px 0 0 0 var(--borda);
+  border-radius: 4px;
+  position: absolute;
+  top: 16px;
+  left: 7.5rem;
+}
+
+.capsule__bottom .light {
+  background: var(--luz);
+  height: 5rem;
+  width: 11rem;
+  position: absolute;
+  top: 207px;
+  left: 160px;
+  border-radius: 100% 100% 0 0;
+  -webkit-transform: rotate(131deg);
+          transform: rotate(131deg);
+}
+
+.capsule__bottom .light::before {
+  content: '';
+  height: 5rem;
+  width: 4rem;
+  border-radius: 0 0 100% 100%;
+  background: var(--luz);
+  position: absolute;
+  top: 55px;
+  left: 112px;
+}
+
+.capsule__bottom .light::after {
+  content: '';
+  height: 5rem;
+  width: 3rem;
+  background: var(--luz);
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+  position: absolute;
+  top: 42px;
+  left: 90px;
+}
+
+.capsule__bottom .light2 {
+  background: var(--luz);
+  height: 4.5rem;
+  width: 4.5rem;
+  position: absolute;
+  top: 218px;
+  left: 112px;
+  border-radius: 100%;
+}
+
+.capsule__bottom .light2::before {
+  content: '';
+  background: var(--luz);
+  height: 3rem;
+  -webkit-transform: rotate(27deg);
+          transform: rotate(27deg);
+  width: 7rem;
+  position: absolute;
+  top: 42px;
+  left: -1px;
+  border-radius: 100%;
+}
+
+.capsule__bottom .light2::after {
+  content: '';
+  background: transparent;
+  height: 5rem;
+  width: 11rem;
+  border-radius: 0 0 50% 50%;
+  -webkit-box-shadow: 0px 12px 0 -8px white;
+          box-shadow: 0px 12px 0 -8px white;
+  -webkit-transform: rotate(-31deg);
+          transform: rotate(-31deg);
+  position: absolute;
+  top: 3px;
+  left: 13px;
+}
+
+.capsule__top {
+  width: 16rem;
+  height: 5.5rem;
+  background: var(--sobra);
+  border: 5px solid var(--borda);
+  border-radius: 50% 50% 0 0 / 100% 100% 0 0;
+  -webkit-box-shadow: 0 -9px 0 0 var(--caps-dark), 0 -9px 0 4px var(--borda);
+          box-shadow: 0 -9px 0 0 var(--caps-dark), 0 -9px 0 4px var(--borda);
+  position: absolute;
+  top: 8.9rem;
+  left: 10.7rem;
+  z-index: 3;
+}
+
+.capsule__top::before {
+  content: '';
+  width: 2.5rem;
+  height: 8px;
+  background: var(--caps-luz);
+  border: 3px solid var(--borda);
+  border-top: 0;
+  border-radius: 4px;
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  top: -2.95rem;
+  left: 1.7rem;
+}
+
+.capsule__top::after {
+  content: '';
+  width: 2.5rem;
+  height: 8px;
+  background: var(--caps-luz);
+  border: 3px solid var(--borda);
+  border-top: 0;
+  border-radius: 4px;
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+  position: absolute;
+  top: -3.1rem;
+  left: 11.2rem;
+}
+
+.capsule__shadow::before {
+  content: '';
+  width: 2.6rem;
+  height: 3.7rem;
+  background: var(--caps-sobra);
+  -webkit-transform: rotate(-30deg);
+          transform: rotate(-30deg);
+  position: absolute;
+  top: 6.5rem;
+  left: 13.9rem;
+  z-index: 2;
+}
+
+.capsule__shadow::after {
+  content: '';
+  width: 2.6rem;
+  height: 3.7rem;
+  background: var(--caps-sobra);
+  -webkit-transform: rotate(28deg);
+          transform: rotate(28deg);
+  position: absolute;
+  top: 6.5rem;
+  left: 21.3rem;
+  z-index: 2;
+}
+
+.capsule .left-circle {
+  width: 18px;
+  height: 30px;
+  background: var(--estrela);
+  border: 8px solid var(--borda);
+  -webkit-box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), 12px 0 0 17px var(--caps-dark), 21px 0 0 20px var(--borda);
+          box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), 12px 0 0 17px var(--caps-dark), 21px 0 0 20px var(--borda);
+  border-radius: 50%;
+  -webkit-transform: rotateY(70deg);
+          transform: rotateY(70deg);
+  position: absolute;
+  top: 13.5rem;
+  left: 7.6rem;
+  z-index: 4;
+}
+
+.capsule .left-circle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 30px solid transparent;
+  border-right: 0;
+  border-bottom: 12px solid var(--caps-dark);
+  -webkit-filter: drop-shadow(-5px -1px 0 var(--borda));
+          filter: drop-shadow(-5px -1px 0 var(--borda));
+  -webkit-transform: rotate(13deg);
+          transform: rotate(13deg);
+  position: absolute;
+  top: -34px;
+  left: 11px;
+}
+
+.capsule .right-circle {
+  width: 18px;
+  height: 30px;
+  background: var(--estrela);
+  border: 8px solid var(--borda);
+  -webkit-box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), -12px 0 0 17px var(--caps-dark), -21px 0 0 20px var(--borda);
+          box-shadow: 0 0 0 12px var(--caps-luz), 0 0 0 20px var(--borda), -12px 0 0 17px var(--caps-dark), -21px 0 0 20px var(--borda);
+  border-radius: 50%;
+  -webkit-transform: rotateY(70deg);
+          transform: rotateY(70deg);
+  position: absolute;
+  top: 13.5rem;
+  left: 28.3rem;
+  z-index: 4;
+}
+
+.capsule .right-circle::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-left: 21px solid transparent;
+  border-right: 0;
+  border-bottom: 15px solid var(--caps-dark);
+  -webkit-filter: drop-shadow(-5px -1px 0 var(--borda));
+          filter: drop-shadow(-5px -1px 0 var(--borda));
+  -webkit-transform: rotate(59deg);
+          transform: rotate(59deg);
+  position: absolute;
+  top: -37px;
+  left: -26px;
+}
+
+.yoda-wrap {
+  width: 16rem;
+  height: 6rem;
+  position: absolute;
+  top: 9rem;
+  left: 11rem;
+  z-index: 4;
+}
+
+.yoda-wrap .hair {
+  width: 25px;
+  height: 20px;
+  position: absolute;
+  top: 0.5rem;
+  left: 8rem;
+}
+
+.yoda-wrap .hair::before, .yoda-wrap .hair::after {
+  content: '';
+  width: 4px;
+  height: 15px;
+  background: var(--borda);
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  border-radius: 5px;
+  position: absolute;
+  top: 5px;
+  left: 4px;
+}
+
+.yoda-wrap .hair::after {
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  left: 9px;
+  top: 4px;
+}
+
+.yoda-wrap .yoda {
+  width: 6.5rem;
+  height: 3rem;
+  border-radius: 20px 20px 0 0;
+  background: var(--yoda);
+  -webkit-box-shadow: inset -4px 4px 0 0 var(--yoda-luz);
+          box-shadow: inset -4px 4px 0 0 var(--yoda-luz);
+  -webkit-filter: drop-shadow(0px -4px 0 var(--borda)) drop-shadow(4px 1px 0 var(--borda)) drop-shadow(-4px 1px 0 var(--borda));
+          filter: drop-shadow(0px -4px 0 var(--borda)) drop-shadow(4px 1px 0 var(--borda)) drop-shadow(-4px 1px 0 var(--borda));
+  position: absolute;
+  top: 29px;
+  left: 75px;
+}
+
+.yoda-wrap .yoda::before {
+  content: '';
+  width: 4rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--yoda);
+  -webkit-box-shadow: inset 0 7px 0 -4px var(--yoda-luz);
+          box-shadow: inset 0 7px 0 -4px var(--yoda-luz);
+  position: absolute;
+  top: -6px;
+  left: 19px;
+}
+
+.yoda-wrap .yoda::after {
+  content: '';
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--yoda);
+  -webkit-box-shadow: 80px 0 0 0 var(--yoda), inset 6px -6px 0 0 var(--yoda-luz);
+          box-shadow: 80px 0 0 0 var(--yoda), inset 6px -6px 0 0 var(--yoda-luz);
+  position: absolute;
+  top: 18px;
+  left: -4px;
+}
+
+.yoda-wrap .yoda .brow {
+  -webkit-filter: drop-shadow(0 -4px 0 var(--yoda-sobra));
+          filter: drop-shadow(0 -4px 0 var(--yoda-sobra));
+}
+
+.yoda-wrap .yoda .brow::before, .yoda-wrap .yoda .brow::after {
+  content: '';
+  width: 25px;
+  height: 10px;
+  background: var(--yoda);
+  -webkit-transform: rotate(15deg);
+          transform: rotate(15deg);
+  border-radius: 50%;
+  position: absolute;
+  top: 8px;
+  left: 30px;
+}
+
+.yoda-wrap .yoda .brow::after {
+  -webkit-transform: rotate(-15deg);
+          transform: rotate(-15deg);
+  left: 50px;
+}
+
+.yoda-wrap .yoda .eye-left,
+.yoda-wrap .yoda .eye-right {
+  width: 27px;
+  height: 20px;
+  background: var(--olho);
+  border-radius: 100% 100% 60% 60%;
+  -webkit-box-shadow: 0px -3px 0 4px var(--yoda-sobra);
+          box-shadow: 0px -3px 0 4px var(--yoda-sobra);
+  position: absolute;
+  top: 19px;
+  left: 11px;
+  z-index: 1;
+}
+
+.yoda-wrap .yoda .eye-left::before,
+.yoda-wrap .yoda .eye-right::before {
+  content: '';
+  width: 4.5px;
+  height: 4.5px;
+  border-radius: 50%;
+  background: white;
+  -webkit-box-shadow: -5px 3px 0 -1.5px white;
+          box-shadow: -5px 3px 0 -1.5px white;
+  position: absolute;
+  top: 5px;
+  left: 6px;
+}
+
+.yoda-wrap .yoda .eye-right {
+  left: 65px;
+}
+
+.yoda-wrap .yoda .eye-right::after {
+  content: '';
+  width: 15px;
+  height: 4px;
+  border-radius: 10px;
+  background: var(--borda);
+  position: absolute;
+  top: 16px;
+  left: -21px;
+}
+
+.yoda-wrap .yoda .eye-left::after {
+  content: '';
+  width: 5px;
+  height: 14px;
+  border-radius: 10px;
+  background: var(--yoda-luz);
+  position: absolute;
+  top: -3px;
+  left: 37px;
+}
+
+.yoda-wrap .ear-left {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 100px solid var(--borda);
+  border-bottom: 25px solid transparent;
+  -webkit-transform: rotate(-9deg);
+          transform: rotate(-9deg);
+  position: absolute;
+  top: 50px;
+  left: -15px;
+  z-index: -1;
+}
+
+.yoda-wrap .ear-left::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 80px solid var(--yoda);
+  border-bottom: 15px solid transparent;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  position: absolute;
+  top: 1px;
+  left: 21px;
+}
+
+.yoda-wrap .ear-left::after {
+  content: '';
+  width: 90px;
+  height: 12px;
+  background: var(--borda);
+  border-radius: 35%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.yoda-wrap .ear-left .line {
+  width: 60px;
+  height: 20px;
+  background: var(--borda);
+  border-radius: 50%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  position: absolute;
+  top: 7px;
+  left: 50px;
+}
+
+.yoda-wrap .ear-left .line::before {
+  content: '';
+  width: 10px;
+  height: 8px;
+  background: var(--yoda-sobra);
+  border-top-left-radius: 5px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  position: absolute;
+  top: -8px;
+  left: 29px;
+}
+
+.yoda-wrap .ear-right {
+  width: 0;
+  height: 0;
+  border-top: 6px solid transparent;
+  border-right: 100px solid var(--borda);
+  border-bottom: 25px solid transparent;
+  -webkit-transform: rotate(10deg) rotateY(180deg);
+          transform: rotate(10deg) rotateY(180deg);
+  position: absolute;
+  top: 50px;
+  left: 165px;
+  z-index: -1;
+}
+
+.yoda-wrap .ear-right::before {
+  content: '';
+  width: 0;
+  height: 0;
+  border-top: 0 solid transparent;
+  border-right: 80px solid var(--yoda);
+  border-bottom: 15px solid transparent;
+  -webkit-transform: rotate(-3deg);
+          transform: rotate(-3deg);
+  position: absolute;
+  top: 1px;
+  left: 21px;
+}
+
+.yoda-wrap .ear-right::after {
+  content: '';
+  width: 90px;
+  height: 12px;
+  background: var(--borda);
+  border-radius: 35%;
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+  position: absolute;
+  top: 8px;
+  left: 0;
+}
+
+.yoda-wrap .ear-right .line {
+  width: 60px;
+  height: 20px;
+  background: var(--borda);
+  border-radius: 50%;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  position: absolute;
+  top: 7px;
+  left: 50px;
+}
+
+.yoda-wrap .ear-right .line::before {
+  content: '';
+  width: 10px;
+  height: 8px;
+  background: var(--yoda-sobra);
+  border-top-left-radius: 5px;
+  -webkit-transform: rotate(-2deg);
+          transform: rotate(-2deg);
+  position: absolute;
+  top: -8px;
+  left: 29px;
+}
+
+.yoda-wrap .pled1 {
+  width: 8rem;
+  height: 15px;
+  background: var(--caps-dark);
+  -webkit-transform: skewX(-60deg);
+          transform: skewX(-60deg);
+  border-radius: 35% 40% 0 0;
+  -webkit-box-shadow: inset 0 4px 0 0 var(--pled), inset 15px 0 0 0 var(--caps-sobra), -7px -2px 0 2px var(--borda), 2px -1px 0 2px var(--caps-sobra);
+          box-shadow: inset 0 4px 0 0 var(--pled), inset 15px 0 0 0 var(--caps-sobra), -7px -2px 0 2px var(--borda), 2px -1px 0 2px var(--caps-sobra);
+  position: absolute;
+  top: 76px;
+  left: 25px;
+  z-index: 4;
+}
+
+.yoda-wrap .pled2 {
+  width: 6rem;
+  height: 22px;
+  background: var(--caps-dark);
+  border-radius: 100% 20% 0 0 / 100% 100% 0 0;
+  -webkit-box-shadow: inset -4px 3px 0 0 var(--pled), inset -12px 5px 0 0 var(--caps-sobra), 4px -2px 0 2px var(--borda);
+          box-shadow: inset -4px 3px 0 0 var(--pled), inset -12px 5px 0 0 var(--caps-sobra), 4px -2px 0 2px var(--borda);
+  position: absolute;
+  top: 69px;
+  left: 130px;
+  z-index: 3;
+}
+
+/*  CADASTRO   */
+.ulPostagem {
+  list-style: none;
+  color: black;
+  display: inline-block;
+}
+
+.ulPostagem li {
+  list-style: none;
+  color: black;
+  display: inline;
+}
+
+.iconLike {
+  width: 10%;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+.imgBtnComentar {
+  width: 25px;
+}
+
+input {
+  outline-style: none;
+}
+
+/* Chat */
+.boryChat {
+  background-color: #eeeae9;
+  color: black;
+}
+
+.divChat {
+  width: 100%;
+  height: 450px;
+  background-image: url(../assets/img/chat/bg-3.jpg);
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  -webkit-box-shadow: 2px 5px 13px var(--cabodaespada);
+          box-shadow: 2px 5px 13px var(--cabodaespada);
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  overflow: auto;
+  color: var(--Papel);
+  margin-top: 1em;
+  border: 2px solid #361459;
+  word-wrap: break-word;
+}
+
+/* scroll */
+.divChat::-webkit-scrollbar-thumb {
+  background-color: #fff;
+  -webkit-box-shadow: 1px 1px 1px 1px #3D611F;
+          box-shadow: 1px 1px 1px 1px #3D611F;
+  border-radius: 10px;
+}
+
+/* barra de rolagem */
+.divChat::-webkit-scrollbar {
+  border-radius: 10px;
+  background-color: #ABABAD;
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+          box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.5);
+}
+
+.txtMensagem {
+  width: 100%;
+  height: 60px;
+  text-align: inherit;
+  padding: 12px 20px;
+  border: 2px solid var(--cabodaespada);
+  background: var(--Dark);
+  color: var(--Papel);
+}
+
+.button2-os {
+  position: absolute;
+  width: 100px;
+  height: 45px;
+  top: 0;
+  left: -110px;
+  right: 0;
+  bottom: 1;
+  margin: auto;
+  background-color: var(--Papel);
+  border: 2.5px solid VAR(--Dark);
+  -webkit-transition: background-color 2.2s;
+  transition: background-color 2.2s;
+  -webkit-transition-duration: 3s;
+          transition-duration: 3s;
+  border-radius: 2em solid;
+  -webkit-transition: 1.5s;
+  transition: 1.5s;
+}
+
+.button2-os:hover {
+  position: absolute;
+  top: 17px;
+  border: 4px solid var(--cabodaespada);
+  background-color: var(--Dark);
+  color: var(--Papel);
+  border-radius: 2em solid var(--cabodaespada);
+}
+
+.divDigitar {
+  text-align: center;
+  background: var(--Dark);
+  border-radius: 5px 0px 0px 50px;
+  position: relative;
+  border-style: solid;
+  border-width: 2px 0px 2px 2px;
+  border-color: var(--espada);
+  -webkit-box-shadow: 0px 5px 6px 6px var(--cabodaespada);
+          box-shadow: 0px 5px 6px 6px var(--cabodaespada);
+  height: inherit;
+  width: inherit;
+  margin-right: 0px;
+  font-size: 14px;
+}
+
+.divReceber {
+  background: var(--Papel);
+  color: var(--Dark);
+  border-radius: 0 5px 50px 0;
+  position: relative;
+  border-style: solid;
+  border-width: 1px 1px 2px 6px;
+  -webkit-box-shadow: 0px 5px 5px 5px var(--espada);
+          box-shadow: 0px 5px 5px 5px var(--espada);
+  /* box-shadow: 1px 1px 1px 1px var(--Dark); */
+  height: inherit;
+  width: inherit;
+}
+
+.x {
+  float: right;
+  position: relative;
+}
+
+.container-chat {
+  padding: 0px;
+}
+
+.writeSlow::after {
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  -webkit-animation: piscar .7s infinite;
+          animation: piscar .7s infinite;
+}
+
+@-webkit-keyframes piscar {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes piscar {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.linha {
+  background-color: black;
+  height: 1px;
+}
+
+.divFotoPerfil {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.fotoPerfil {
+  width: 100%;
+  height: 100%;
+}
+
+.divFotoAmigo {
+  width: 40px;
+  height: 30px;
+  overflow: hidden;
+}
+
+.fotoAmigo {
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+
+.nomeAmigo {
+  margin-top: 0px;
+  font-size: 14px;
+  color: var(--Papel);
+}
+
+h3 {
+  border-bottom: 2px solid var(--cabodaespada);
+  margin-bottom: 5px;
+}
+
+.imgUsuario {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* border-style: solid; */
+  border: solid 1px;
+  border-color: var(--Dark);
+}
+
+#imgPerfilNotificacao {
+  width: 60px;
+  height: 50px;
+  border-radius: 10%;
+  border: solid 1px;
+  border-color: var(--Dark);
+}
+
+.divFotoPerfil:hover {
+  border: inset;
+  border-color: var(--Dark);
+  border-width: 3px;
+  cursor: pointer;
+}
+
+.divFotoPerfil figcaption {
+  visibility: hidden;
+  margin-top: -25px;
+}
+
+.divFotoPerfil:hover figcaption {
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+
+.divFotoPerfil {
+  width: 150px;
+  height: 150px;
+  background-color: var(--Papel);
+  color: var(--Dark);
+}
+
+.divFotoPerfil:hover img {
+  opacity: 0.3;
+}
+
+/* .myModal button{
+width: 100px;
+} */
+.divInputLabel {
+  border: 0;
+  cursor: pointer;
+  background: var(--Papel);
+  display: block;
+  /* margin: 20px auto; */
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 8px 20px;
+  width: 100%;
+  height: 40px;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.inputFile {
+  visibility: hidden;
+}
+
+.inputText2 {
+  border: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.inputText2:focus {
+  border: 2px solid #654EA4;
+}
+
+.divManterPerfil h6 {
+  cursor: pointer;
+}
+
+.inputTextInvalid {
+  border: 1px solid #ff0000;
+  -webkit-box-shadow: 0 0 5px 2px #f08080;
+          box-shadow: 0 0 5px 2px #f08080;
+}
+
+.inputTextValid {
+  border: 1px solid #008000;
+  -webkit-box-shadow: 0 0 5px 2px #00c800;
+          box-shadow: 0 0 5px 2px #00c800;
+}
+
+.disabled {
+  opacity: 0.8;
+}
+
+.dropdownIcon {
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.meuDropdown {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.meuDropdown li:hover ul, .meuDropdown li.over ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  z-index: 3;
+}
+
+.meuDropdown li ul {
+  border: 1px solid gray;
+  background-color: white;
+  color: black;
+  display: none;
+  position: absolute;
+  left: 0;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.meuDropdown li ul li {
+  border: 1px solid white;
+}
+
+.meuDropdown li ul li:hover {
+  background-color: black;
+  color: white;
+}
+
+.imgPostagem {
+  border: 0px, solid, black;
+  -webkit-box-shadow: 3px 3px 10px  black;
+          box-shadow: 3px 3px 10px  black;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px;
+}
+
+@media screen and (min-width: 1200px) {
+  .divMinichat {
+    /* position: absolute; */
+    float: right;
+    bottom: 0px;
+    right: 300px;
+    width: 252px;
+    height: 294px;
+    position: -webkit-sticky;
+    position: sticky;
+  }
+  .Botãofechar {
+    width: 10%;
+    cursor: pointer;
+    margin-left: 15em;
+  }
+  .divTextoMinichat {
+    background: url("chat.jpg") no-repeat;
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 230px;
+  }
+  .divEnviarMinichat {
+    padding: 3px 12px;
+    min-width: 30px;
+    text-align: center;
+    /* max-width: 240px; */
+    background-color: var(--Dark);
+    border-radius: 5px 0px 0px 50px;
+    /* text-align: right; */
+    float: right;
+    /* overflow: hidden; */
+    word-wrap: break-word;
+    text-align: center;
+    padding-top: 5px;
+    color: var(--Papel);
+  }
+  .divReceberMinichat {
+    text-align: center;
+    padding: 1px;
+    min-width: 30px;
+    max-width: 200px;
+    background-color: white;
+    /* width: auto;
+    height: auto; */
+    color: black;
+    border-radius: 0px 10px 10px 0px;
+    float: left;
+    word-wrap: break-word;
+    border: 1px solid #222269;
+    left: 0px;
+    /* padding-top: 8px; */
+  }
+  .camposMinichat {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #222269;
+    background-color: #000;
+  }
+  .nickMinichat {
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.divImagemBuscarUsuario {
+  background-color: white;
+}
+
+.usuariosItens {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.formBuscaUsuario {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.labelImgAdiconarAmigoGrupo {
+  /* width: 84px; */
+  height: 50px;
+  /* border: 2px solid black; */
+  border-radius: 50%;
+  /* overflow: hidden; */
+  position: relative;
+  left: 50%;
+  cursor: pointer;
+}
+
+.inputAdiconarAmigoGrupo:checked + label p {
+  color: var(--cabodaespada);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.imgAdiconarAmigoGrupo {
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  /* height: 100%; */
+}
+
+.labelImgAdiconarAmigoGrupo:hover {
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+.inputAdiconarAmigoGrupo:checked + label p {
+  color: var(--cabodaespada);
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+/* STYLE CARDOSO */
+/* ////////////////////////////////////////////////// Postagens  ////////////////////////////////////////////////// */
+.tituloPostagem, .textoDenuncia {
+  margin-left: 8px;
+  margin-right: 5px;
+  text-align: justify;
+  word-wrap: break-word;
+  font-size: 14;
+  color: var(--Papel);
+}
+
+.imagemPostagem {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.imagemPostagemModal {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+  cursor: -webkit-zoom-in;
+  cursor: zoom-in;
+}
+
+.espacoPostagem {
+  padding: 8px;
+}
+
+.btnlikes {
+  background: none;
+  border: none;
+  margin-left: 40px;
+}
+
+.btnComentar {
+  float: right;
+  font-size: 11px;
+  border-radius: 25px;
+  /* width: 23%; */
+  /* height: 25px; */
+  cursor: pointer;
+  -webkit-box-shadow: #5f5f5f 0px 1px 1px;
+          box-shadow: #5f5f5f 0px 1px 1px;
+}
+
+.igmLike {
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.igmDeslike {
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+.igmComentario {
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+
+#btnEnviarDenuncia, #btnSairDenuncia {
+  width: 100%;
+}
+
+.imgEmojinPostagem {
+  height: 20px;
+  padding-left: 5px;
+}
+
+.imgMenu {
+  height: 20px;
+  float: right;
+}
+
+.opcoesPostagem {
+  margin-top: 25px;
+  position: absolute;
+  padding: 5px;
+}
+
+.btnOpcoes {
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.comentario {
+  text-align: justify;
+  word-break: break-all;
+  margin-right: 3ex;
+}
+
+.telaCompartilhar {
+  background-color: rgba(221, 221, 221, 0.308);
+  padding: 8px;
+  border-radius: 5px;
+  border: groove;
+  border-color: rgba(221, 221, 221, 0.308);
+  margin-bottom: 7px;
+  z-index: -1;
+}
+
+.imgPerfilPostagem {
+  border-radius: 50%;
+  height: 35px;
+  width: 40px;
+}
+
+a {
+  cursor: pointer;
+}
+
+.imgRelogioPostagem {
+  border-radius: 50%;
+  height: 28px;
+}
+
+.p_relogio {
+  font-size: 12px;
+  padding: 8px;
+}
+
+.tabelaEmojinCaracter button {
+  font-size: 19px;
+  padding: 5px;
+}
+
+.tabelaEmojinMao button {
+  font-size: 19px;
+  padding: 2px;
+  margin-left: 6px;
+}
+
+.rowComentario {
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.rowComentario:hover {
+  background-color: rgba(177, 176, 176, 0.231);
+  border-radius: 3%;
+}
+
+.textoConfirmarExcluir {
+  text-align: center;
+}
+
+#modalExcluir {
+  margin-top: 10%;
+}
+
+.menuComentario {
+  display: none;
+}
+
+@media only screen and (max-width: 1000px) {
+  .divManterPerfil {
+    background-color: transparent;
+    border-width: 0px;
+  }
+  .divAmigosGrupo {
+    display: none;
+  }
+  .row-1 {
+    padding: 10px;
+  }
+}
+
+.divOpcoesChat {
+  border: solid 1px black;
+}
+
+img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.divBuscarPostagem {
+  border: solid 1px black;
+  /* background-color: #654EA4; */
+}
+
+select {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.divButton2 {
+  /* display: table-cell;
+  vertical-align: middle ; */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /* margin:0; */
+  /* margin: auto; */
+  margin: 0;
+  padding: 0;
+}
+
+.button2 {
+  width: 75px;
+  height: 25px;
+  text-align: center;
+  line-height: 35px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  position: relative;
+  float: left;
+}
+
+.button2:hover {
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+  cursor: pointer;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+@keyframes animate {
+  0% {
+    background-position: 0%;
+  }
+  100% {
+    background-position: 400%;
+  }
+}
+
+.button2:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: -webkit-gradient(linear, left top, right top, from(#03a9f4), color-stop(#f441a5), color-stop(#ffeb3b), to(#03a9f4));
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 40%;
+  border-radius: 40px;
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 0;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.button2:hover:before {
+  -webkit-filter: blur(20px);
+          filter: blur(20px);
+  opacity: 1;
+  -webkit-animation: animate 8s linear infinite;
+          animation: animate 8s linear infinite;
+}
+
+.centralizar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.btnTrue {
+  background-color: #497c58;
+  border: solid 1px black;
+  color: white;
+  border-radius: 30px;
+}
+
+.btnFalse {
+  background-color: #882117;
+  border: solid 1px black;
+  color: white;
+  border-radius: 30px;
+}
+
+.iconSexo {
+  width: 5%;
+}
+
+.infoOutroPerfil {
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  padding: 10px;
+  /* max-height: 200px; */
+}
+
+#minhasPostagens {
+  background-color: white;
+  color: black;
+}
+
+.hrMobile {
+  display: none;
+}
+
+@media screen and (max-width: 766px) {
+  .hrMobile {
+    display: initial;
+  }
+  .iconSexo {
+    width: 6%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #amigosGrupoChat {
+    display: none;
+  }
+}
+
+.postar {
+  width: 100%;
+  left: 30%;
+  position: absolute;
+  border-top-left-radius: 2em;
+}
+
+.PostagemInput {
+  background: var(--Dark);
+  color: var(--Papel);
+  padding: 13px 12px;
+  line-height: 1.6;
+  width: 100%;
+  height: 90px;
+  margin-top: 90px;
+  border-radius: 1em;
+}
+
+/* Esconde o input */
+.InputArquivos [type='file'] {
+  display: none;
+}
+
+/* Aparência que terá o seletor de arquivo */
+.LabelArquivos {
+  background-color: #3498db;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  margin: 10px;
+  padding: 6px 20px;
+}
+
+.Publicar[type="submit"] {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--Papel);
+  padding: 8px 20px;
+  outline: none;
+  color: var(--Dark);
+  background: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  right: 1%;
+  top: 57%;
+  display: none;
+}
+
+.divDividir {
+  margin-bottom: 15px;
+  background: var(--Papel);
+  background-image: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg);
+  width: auto;
+  -webkit-box-shadow: var(--cabodaespada) 5px 1px 25px;
+          box-shadow: var(--cabodaespada) 5px 1px 25px;
+  padding: 4px;
+}
+
+.Exibir {
+  border: 0;
+  background: none;
+  display: block;
+  margin: 20px auto;
+  text-align: center;
+  border: 2px solid var(--Papel);
+  padding: 8px 20px;
+  outline: none;
+  color: var(--Dark);
+  background: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  right: 45%;
+  top: 57%;
+  display: none;
+}
+
+.dropdown-toggle::after {
+  display: none;
+}
+
+.Barra-Publicar {
+  width: 100%;
+  height: 50px;
+  background: var(--Dark);
+  display: none;
+}
+
+.Postagem {
+  background: var(--Dark);
+  color: var(--Papel);
+}
+
+.BuscarPostagem {
+  background: var(--cabodaespada);
+  border: 1px solid;
+  position: absolute;
+  top: 92%;
+  width: 100%;
+  display: none;
+}
+
+.ComentarioPostagem {
+  padding: 13px 13px;
+  font-size: 13px;
+  height: 58px;
+  resize: none;
+  width: 100%;
+  color: var(--Dark);
+  overflow: hidden;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background: var(--Papel);
+  line-height: 1.6;
+}
+
+.Areacomentario {
+  height: auto;
+  background: var(--espada);
+  max-height: 100px;
+  /* padding-top: 5px; */
+  padding-left: 15px;
+  padding-right: 30px;
+  overflow-y: scroll;
+  position: relative;
+  width: 78%;
+  left: 2.5%;
+  top: -1%;
+  color: var(--Dark);
+  border-radius: 12px;
+}
+
+.EnviarComentario {
+  background: none;
+  position: relative;
+  left: 50%;
+  top: 20%;
+  font-size: 11px;
+  border: none;
+  /* width: 23%; */
+  /* height: 25px; */
+  cursor: pointer;
+}
+
+.EmojiBotao {
+  border: none;
+  position: relative;
+  background: none;
+  top: 20%;
+}
+
+.QtdLDC {
+  color: var(--Papel);
+  font-size: 14px;
+  margin-left: 15px;
+}
+
+.QTDL {
+  position: relative;
+  top: 80%;
+  left: 30%;
+  color: var(--Papel);
+}
+
+.QTDD {
+  position: relative;
+  top: 49%;
+  left: 100%;
+  color: var(--Papel);
+}
+
+.QTDC {
+  position: relative;
+  top: 14.6%;
+  left: 180%;
+  color: var(--Papel);
+}
+
+h3 {
+  color: var(--Papel);
+}
+
+.amigo {
+  font-size: 14px;
+  padding: 13px 10px;
+  border-bottom: 2px solid var(--Papel);
+}
+
+.divAmigosGrupo {
+  height: 517px;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+}
+
+#divAmigo {
+  background: var(--Dark);
+  color: var(--Papel);
+  position: fixed;
+  width: 20%;
+  padding: 25px 15px;
+  margin-left: 1050px;
+  text-align: center;
+  border-radius: 1em;
+  margin-top: 250px;
+}
+
+.Grupo {
+  background: var(--Dark);
+  color: var(--Papel);
+  position: fixed;
+  padding: 25px 15px;
+  width: 20%;
+  margin-left: 1050px;
+  text-align: center;
+  border-radius: 1em;
+  margin-top: 90px;
+}
+
+hr {
+  display: none;
+}
+
+.bg-light {
+  background: var(--Dark) !important;
+  color: var(--Papel);
+  padding: 8px;
+  font-size: 14px;
+}
+
+.fotoAmigo {
+  border-radius: 50%;
+}
+
+.nickname {
+  cursor: pointer;
+  font-size: 15px;
+  word-wrap: break-word;
+}
+
+.NomeGrupo {
+  font-size: 14px;
+  margin-left: -16px;
+  margin-right: 25px;
+  position: relative;
+  margin-top: 10px;
+  word-wrap: break-word;
+  cursor: pointer;
+}
+
+.InputGrupo {
+  background: var(--Papel);
+  color: var(--Dark);
+  padding: 13px 12px;
+  line-height: 1.6;
+  width: 55%;
+  height: 10px;
+  margin-bottom: 5px;
+  margin-right: 60px;
+  border-radius: 1em;
+  display: none;
+}
+
+.inputAmigo {
+  background: var(--Papel);
+  color: var(--Dark);
+  padding: 13px 12px;
+  line-height: 1.6;
+  width: 55%;
+  height: 10px;
+  margin-bottom: 5px;
+  margin-right: 60px;
+  border-radius: 1em;
+  display: none;
+}
+
+.BotaoGrupo {
+  border: 0;
+  background: none;
+  display: none;
+  /* margin: 20px auto; */
+  text-align: center;
+  border: 2px solid var(--Papel);
+  /* padding: 8px 20px; */
+  width: 25%;
+  left: 67%;
+  top: 87%;
+  position: absolute;
+  outline: none;
+  color: var(--Dark);
+  background: var(--Papel);
+  border-radius: 24px;
+  /* -webkit-transition: 0.25s; */
+  /* transition: 0.25s; */
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.BuscaAmigo {
+  border: 0;
+  background: none;
+  display: none;
+  /* margin: 20px auto; */
+  text-align: center;
+  border: 2px solid var(--Papel);
+  /* padding: 8px 20px; */
+  width: 25%;
+  left: 67%;
+  top: 92%;
+  position: absolute;
+  outline: none;
+  color: var(--Dark);
+  background: var(--Papel);
+  border-radius: 24px;
+  /* -webkit-transition: 0.25s; */
+  /* transition: 0.25s; */
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.divMinichat {
+  background: var(--espada);
+  color: var(--Papel);
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+  width: 18%;
+  position: fixed;
+}
+
+.barraDeMenu {
+  background: var(--espada);
+  color: var(--Dark);
+  font-size: 14px;
+  border-top-left-radius: 1em;
+  border-top-right-radius: 1em;
+}
+
+.camposMinichat {
+  background: var(--Dark);
+}
+
+.nickMinichat {
+  padding: 4px 10px;
+  margin-left: 6em;
+}
+
+.ImagemLogoHome {
+  width: 50px;
+  height: 60px;
+  left: 50%;
+  top: 0%;
+  position: absolute;
+}
+
+.MenuHome {
+  position: fixed;
+  width: 100%;
+  z-index: 50;
+  padding: 10px;
+  background: var(--Dark);
+  background-image: url("https://s3-us-west-2.amazonaws.com/s.cdpn.io/1462889/pat.svg");
+}
+
+.botaoHome {
+  cursor: pointer;
+  position: relative;
+  left: 3%;
+}
+
+.botaoChat {
+  cursor: pointer;
+  position: absolute;
+  left: 15%;
+  top: 19.0%;
+}
+
+.botaoPerfil {
+  cursor: pointer;
+  position: absolute;
+  left: 69%;
+  top: 19.0%;
+}
+
+.botaoPostar {
+  border: 0;
+  background: var(--Dark);
+  display: block;
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 6px 15px;
+  outline: none;
+  color: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  left: 82%;
+  top: 0.72%;
+}
+
+.botaoBuscarAmigo {
+  cursor: pointer;
+  position: absolute;
+  left: 82%;
+  top: 19.0%;
+}
+
+.botaoSair {
+  cursor: pointer;
+  position: absolute;
+  left: 94%;
+  top: 19.0%;
+}
+
+#minhasPostagens {
+  background: var(--Dark);
+  color: var(--Papel);
+  margin-top: 55px;
+}
+
+.linha {
+  display: none;
+}
+
+.divManterPerfil {
+  background: var(--Dark);
+  position: absolute;
+  border: none;
+  width: 80%;
+  top: 3.0%;
+  left: 5%;
+}
+
+.divFotoPerfil {
+  background: transparent;
+  border-radius: 5em;
+  border: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: var(--Papel);
+  position: relative;
+  top: 20px;
+}
+
+.myModal {
+  /* MODAL */
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 50%;
+  height: 300px;
+  background: var(--Dark);
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 20%;
+  position: absolute;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+
+.myModal img {
+  /* MODAL */
+  width: 50px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.modalSucesso {
+  /* MODAL */
+  width: 30%;
+  text-align: center;
+  background-color: #008000;
+  position: absolute;
+  border: 5px solid #f5f5f5;
+  -webkit-box-shadow: 0 0 0 20px #008000;
+          box-shadow: 0 0 0 20px #008000;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  top: 20%;
+  left: 35%;
+  word-wrap: break-word;
+}
+
+.inputText {
+  border: 0;
+  background: var(--Dark);
+  display: block;
+  /* margin: 20px auto; */
+  /* border: 2px solid var(--cabodaespada); */
+  padding: 10px 7px;
+  width: 67%;
+  outline: none;
+  color: var(--Papel);
+  /* border-radius: 24px; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.buttonALI {
+  border: 0;
+  background: var(--Papel);
+  height: 15%;
+  display: block;
+  width: 75.9px;
+  text-align: center;
+  /* padding: 5px 15px; */
+  outline: none;
+  /* padding: 5px; */
+  color: var(--Dark);
+  /* border-radius: 2em; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  border: solid var(--Dark);
+  cursor: pointer;
+  border-radius: 1em;
+  position: absolute;
+  left: 68%;
+  top: 54%;
+}
+
+.buttonALI:hover {
+  background: var(--Dark);
+  color: var(--Papel);
+  border: solid var(--cabodaespada);
+}
+
+.buttonChat {
+  height: 100%;
+  width: 65px;
+  margin-left: 10.9em;
+  /* margin-top: 5em; */
+  position: absolute;
+  top: 0%;
+  /* font: status-bar; */
+  border: 0;
+  color: var(--Dark);
+  /* font-size: 14px; */
+  background: var(--Papel);
+}
+
+.buscaramigo {
+  border: 0;
+  background: var(--Papel);
+  display: block;
+  /* margin: 20px auto; */
+  border: 2px solid var(--cabodaespada);
+  padding: 10px 7px;
+  width: 50%;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 1em;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 5em;
+  font-size: 14px;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+#txtExcluirAmigo {
+  margin-left: 8em;
+}
+
+#smallNickname {
+  position: absolute;
+  top: 70%;
+  left: 40%;
+}
+
+.BotãofecharR {
+  width: 8%;
+  cursor: pointer;
+  margin-top: -6em;
+  margin-left: 26em;
+}
+
+.divUsuarios {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 50%;
+  height: 550px;
+  background: var(--Dark);
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 15%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  position: absolute;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+
+.TituloDeB {
+  font-size: 24px;
+  position: absolute;
+  top: 5%;
+  left: 30%;
+  color: var(--Papel);
+}
+
+.txtVisualizarPerfil {
+  color: var(--Papel);
+  cursor: pointer;
+}
+
+.botaoPBA {
+  border: 0;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 6px 15px;
+  outline: none;
+  color: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  left: 75%;
+  top: 16%;
+}
+
+.usuarioItens {
+  color: var(--Papel);
+}
+
+.botaoEnviarBP {
+  border: 0;
+  background: none;
+  display: block;
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 6px 15px;
+  outline: none;
+  color: var(--Papel);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  cursor: pointer;
+  position: absolute;
+  left: 25%;
+  top: 15%;
+}
+
+.G {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 50%;
+  height: 400px;
+  background: var(--Dark);
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 20%;
+  position: absolute;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+
+.G .NomeModalG {
+  text-align: center;
+}
+
+.NomeModalG {
+  position: relative;
+  top: -10%;
+}
+
+.ModalAmigoLabel {
+  font-size: 24px;
+  position: relative;
+  top: -25%;
+  left: 25%;
+}
+
+.inputTextG {
+  border: 0;
+  background: var(--Papel);
+  /* display: block; */
+  /* margin: 2px auto; */
+  margin-bottom: 20px;
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 8px 7px;
+  width: 90%;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+}
+
+.inputTextG[type="text"]:focus {
+  width: 95%;
+  border-color: var(--Dark);
+}
+
+.BotaomudarG {
+  border: 0;
+  background: var(--Papel);
+  height: 10%;
+  display: block;
+  width: 85px;
+  text-align: center;
+  /* padding: 5px 15px; */
+  outline: none;
+  /* padding: 5px; */
+  color: var(--Dark);
+  /* border-radius: 2em; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  border: solid var(--Dark);
+  cursor: pointer;
+  border-radius: 1em;
+  position: absolute;
+  left: 40%;
+  top: 84%;
+}
+
+.Nmodal {
+  padding: 4px;
+  margin-top: 2px;
+  /* margin-bottom: -5px; */
+  margin-left: 6px;
+}
+
+.Dmodal {
+  padding: 4px;
+  margin-top: 2px;
+  /* margin-bottom: -5px; */
+  margin-left: 6px;
+}
+
+.Imodal {
+  padding: 4px;
+  margin-top: 2px;
+  /* margin-bottom: -5px; */
+  margin-left: 6px;
+}
+
+.modalAmigo {
+  color: var(--Dark);
+  /* text-align: center; */
+  width: 70%;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+  background: var(--Papel);
+  margin-left: 25%;
+  margin-right: 10%;
+  top: -5%;
+  position: absolute;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+
+.myModalAln {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 45%;
+  background: url("modal.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 25%;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid var(--cabodaespada);
+  border-radius: 1em;
+  padding-top: 60px;
+}
+
+.BotaomudarN {
+  border: 0;
+  background: var(--Papel);
+  height: 15%;
+  display: block;
+  width: 75.9px;
+  text-align: center;
+  /* padding: 5px 15px; */
+  outline: none;
+  /* padding: 5px; */
+  color: var(--Dark);
+  /* border-radius: 2em; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  border: solid var(--Dark);
+  cursor: pointer;
+  border-radius: 1em;
+  position: absolute;
+  left: 70%;
+  top: 54%;
+}
+
+.mudarnome {
+  border: 0;
+  cursor: pointer;
+  background: var(--Papel);
+  display: block;
+  /* margin: 20px auto; */
+  text-align: center;
+  border: 2px solid var(--cabodaespada);
+  padding: 8px 20px;
+  width: 40%;
+  height: 40px;
+  outline: none;
+  color: var(--Dark);
+  border-radius: 24px;
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  margin-left: 170px;
+  font-size: 14px;
+}
+
+.myModalG {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 45%;
+  background: url("modal2.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 400px;
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 25%;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid var(--cabodaespada);
+  border-radius: 1em;
+  padding-top: 60px;
+}
+
+.TituloModalG {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  border-bottom: 2px solid var(--cabodaespada);
+}
+
+.myModalRe {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 35%;
+  background: var(--Dark);
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 25%;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid var(--cabodaespada);
+  border-radius: 1em;
+  padding-top: 60px;
+}
+
+.Remosim {
+  border: 0;
+  background: var(--Papel);
+  height: 13%;
+  display: block;
+  width: 75.9px;
+  text-align: center;
+  /* padding: 5px 15px; */
+  outline: none;
+  /* padding: 5px; */
+  color: var(--Dark);
+  /* border-radius: 2em; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  border: solid var(--Dark);
+  cursor: pointer;
+  border-radius: 1em;
+  position: absolute;
+  left: 30%;
+  top: 70%;
+}
+
+.remonao {
+  border: 0;
+  background: var(--Papel);
+  height: 13%;
+  display: block;
+  width: 75.9px;
+  text-align: center;
+  /* padding: 5px 15px; */
+  outline: none;
+  /* padding: 5px; */
+  color: var(--Dark);
+  /* border-radius: 2em; */
+  -webkit-transition: 0.25s;
+  transition: 0.25s;
+  font-size: 14px;
+  border: solid var(--Dark);
+  cursor: pointer;
+  border-radius: 1em;
+  position: absolute;
+  left: 60%;
+  top: 70%;
+}
+
+.Remover {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 40%;
+  border-bottom: 2px solid var(--cabodaespada);
+}
+
+.myModalP {
+  color: var(--Papel);
+  /* text-align: center; */
+  width: 45%;
+  background: url("modal.jpg");
+  overflow-y: scroll;
+  overflow-x: hidden;
+  display: block;
+  height: 200px;
+  margin-left: 25%;
+  margin-right: 10%;
+  top: 25%;
+  position: absolute;
+  border-radius: 10px;
+  overflow: hidden;
+  border: solid var(--cabodaespada);
+  border-radius: 1em;
+  padding-top: 60px;
+}
+
+.TituloModal {
+  font-size: 24px;
+  position: absolute;
+  top: 0;
+  left: 36%;
+  border-bottom: 2px solid var(--cabodaespada);
+}
+
+.fecharmodal {
+  height: 30px;
+  position: absolute;
+  top: 0;
+  left: 94%;
+  cursor: pointer;
+  background: var(--Papel);
+  border-radius: 50%;
+  border: 0;
+}
+
+.myModal img {
+  /* MODAL */
+  width: 50px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.modalSucesso {
+  /* MODAL */
+  width: 30%;
+  text-align: center;
+  background-color: #008000;
+  position: absolute;
+  border: 5px solid #f5f5f5;
+  -webkit-box-shadow: 0 0 0 20px #008000;
+          box-shadow: 0 0 0 20px #008000;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  top: 20%;
+  left: 35%;
+  word-wrap: break-word;
+}
+/*# sourceMappingURL=asf14.css.map */

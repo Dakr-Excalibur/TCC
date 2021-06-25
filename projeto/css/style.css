@@ -1,0 +1,962 @@
+/* STYLE JESUS */
+
+/*  CADASTRO   */
+.ulPostagem{
+  list-style:none;
+  color: black;
+  display: inline-block;
+}
+.ulPostagem li{
+  list-style:none;
+  color: black;
+  display: inline;
+}
+.iconLike{
+  width: 10%;
+}
+.pointer{
+  cursor: pointer;
+}
+.imgBtnComentar{
+  width: 25px;
+}
+input{
+  outline-style: none;
+}
+#boryTelaCadastro{
+  background-image: url("../assets/img/fundoCadastro.jfif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+.divTelaCadastro{
+  font-family: Arial, Helvetica, sans-serif;
+  color: white;
+  margin-top: 5%;
+}
+/* Cadastro e login */
+.inputCL{
+  cursor: pointer;
+  width: 335px;
+  height: 38px;
+  border-radius: 18px;
+  border: 2px solid rgb(247, 173, 198);
+  font-size: 15px;
+  padding: 5px 15px;
+}
+.volta{color: yellow;}
+.inputButtonCL{
+  cursor: pointer;
+  width: 335px;
+  height: 35px;
+  border-radius: 18px;
+  border: 2px solid black;
+  font-size: 15px;
+  padding: 5px 15px;
+  background-color: deeppink;
+}
+/*  LOGIN    */
+#boryTelaLogin{
+  background-image: url("../assets/img/fundoLogin.jfif");
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  text-align: center;
+}
+.divTelaLogin{
+  color: white;
+}
+
+/* Chat */
+.boryChat{
+  background-color: #eeeae9;
+  color: black;
+}
+.divChat{
+  width: 50%;
+  height: 300px;
+  background-image: url('../assets/img/chat/bg-3.jpg');
+  background-size: 100% 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background-attachment: fixed; */
+  /* background-size: cover; */
+  overflow: auto;
+  color: white;
+  border: 2px solid #361459;
+  word-wrap: break-word;
+}
+/* scroll */
+.divChat::-webkit-scrollbar-thumb {
+  background-color: 	#fff;
+  box-shadow: 1px 1px 1px 1px #3D611F;
+  border-radius: 10px;
+
+}
+/* barra de rolagem */
+.divChat::-webkit-scrollbar {
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #ABABAD;
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5);
+}
+
+.txtMensagem{
+  width: 100%;
+  height: 60px;
+  text-align: inherit;
+  padding: 12px 20px;
+  border: 2px solid #1f104f;
+}
+
+.buttonEnviar{
+  display: inline-block;
+  font-size: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  outline: none;
+  color: #fff;
+  background-color: #5464c9;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #272d4e;
+  height:  50px;
+  width: 100%;
+}
+.buttonEnviar:hover {background-color: #191970}
+
+.buttonEnviar:active {
+  background-color: #272d4e;
+  box-shadow: 0 5px #d3ccff;
+  transform: translateY(4px);
+}
+
+
+.divDigitar{
+  text-align: center;
+  background-color: #000;
+  border-radius: 30px 0px 0px 30px;
+  position: relative;
+  border-style: solid;
+  border-width: 2px 0px 2px 2px;
+  border-color: #c0c0c0;
+  box-shadow: 0px 1px 1px 1px white;
+  height: inherit;
+  width: inherit;
+  margin-right: 0px;
+  font-family: "Arial";
+}
+
+.divReceber{
+  background-color: #fff;
+  color: black;
+  border-radius: 0 30px 30px 0;
+  position: relative;
+  border-style: solid;
+  border-width: 2px 0px 2px 2px;
+  border-color: #c0c0c0;
+  box-shadow: 1px 1px 1px 1px black;
+  height: inherit;
+  width: inherit;
+  font-family: "Arial";
+}
+.x{
+  float: right;
+  position: relative;
+}
+.container-chat{
+  padding: 0px;
+}
+.writeSlow::after{
+  content: '|';
+  margin-left: 5px;
+  opacity: 1;
+  animation: piscar .7s infinite;
+}
+@keyframes piscar{
+  0%, 100%{
+    opacity: 0;
+  }
+  50%{
+    opacity: 1;
+  }
+
+}
+
+
+
+
+.linha{
+  background-color: black;
+  height: 1px;
+}
+
+.divFotoPerfil{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  border-radius: 10%;
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+.fotoPerfil{
+  width: 100%;
+  height: 100%;
+}
+
+.divFotoAmigo{
+  border-style: solid;
+  border-width: 2px;
+  border-color: #000;
+  /* border-radius: 100%; */
+  border-radius: 10px;
+  width: 65px;
+  height: 50px;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+}
+
+.fotoAmigo{
+  width: 100%;
+  height: 100%;
+  /* background-color: white; */
+}
+.nomeAmigo{
+  margin-top: 10px;
+  font-size: 18px;
+}
+
+.imgUsuario{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  /* border-style: solid; */
+  border: solid 1px;
+  border-color: black;
+}
+
+#imgPerfilNotificacao{
+  width: 60px;
+  height: 50px;
+  border-radius: 10%;
+  border: solid 1px;
+  border-color: black;
+}
+
+.divFotoPerfil:hover{
+  border: inset;
+  border-color: #000;
+  border-width: 3px;
+  cursor: pointer;
+}
+
+.divFotoPerfil figcaption{
+  visibility: hidden;
+  margin-top: -25px;
+}
+
+.divFotoPerfil:hover figcaption{
+  visibility: visible;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+}
+.divFotoPerfil{
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  color: black;
+}
+
+.divFotoPerfil:hover img{
+  opacity: 0.3;
+}
+
+
+
+.button{
+  border-radius: 10px;
+  border: 3px solid black;
+  /* word-wrap: break-word; */
+  max-width: 100%;
+  max-height: 100%;
+  padding: 5px;
+  cursor: pointer;
+}
+
+/* .myModal button{
+width: 100px;
+} */
+
+.divInputLabel{
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  border-radius: 10px;
+  color: black;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 18px;
+  cursor: pointer;
+  border:  3px solid black;
+}
+.inputLabel p{
+  margin: 0 ;
+}
+.inputFile{
+  visibility: hidden;
+}
+
+.inputText{
+  border-radius: 10px;
+  border: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.inputText:focus{
+  border: 2px solid #654EA4;
+}
+
+.inputText2{
+  border: 1px solid black;
+  max-width: 100%;
+  max-height: 100%;
+}
+.inputText2:focus{
+  border: 2px solid #654EA4;
+}
+
+.divManterPerfil{
+  background-color: white;
+  color: black;
+  padding-top: 5px;
+  padding-bottom:  5px;
+  border: 2px solid #361459;
+  /* display: table-cell;
+  vertical-align: middle ; */
+
+}
+
+
+
+.divManterPerfil h6{
+  cursor: pointer;
+}
+
+.inputTextInvalid{
+  border: 1px solid #ff0000;
+  box-shadow: 0 0 5px 2px #f08080 ;
+}
+.inputTextValid{
+  border: 1px solid #008000;
+  box-shadow: 0 0 5px 2px #00c800 ;
+}
+
+.disabled{
+  opacity: 0.8;
+}
+
+.dropdownIcon{
+  width: 17px;
+  height: 17px;
+  cursor: pointer;
+}
+
+.meuDropdown{
+  margin: 0; padding: 0;
+  list-style: none;
+
+}
+.meuDropdown li:hover ul, .meuDropdown li.over ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: block;
+  z-index: 3;
+}
+.meuDropdown li ul{
+  border:1px solid gray;
+  background-color: white;
+  color: black;
+  display:none;
+  position:absolute;
+  left:  0;
+  z-index: 1;
+  cursor: pointer;
+}
+.meuDropdown li ul li{
+  border:1px solid white;
+}
+.meuDropdown li ul li:hover{
+  background-color: black;
+  color: white;
+}
+
+.postagem{
+  background-color: #343a40;
+  color: black;
+  border: 2px solid #361459;
+}
+#divAmigo{
+  /* background-color: white; */
+  color: black;
+  border: 2px solid #361459;
+  background-color: #343a40;
+}
+#divGrupo{
+  color: black;
+  border: 2px solid #361459;
+  background-color: #343a40;
+}
+.divAmigosGrupo{
+  background-color: #343a40;
+  height:  517px;
+  overflow-y: auto;
+  /* overflow-x: hidden; */
+}
+
+body{
+  background-color:#eeeae9;
+  color: white;
+}
+
+.imgPostagem{
+  border: 0px, solid, black;
+  box-shadow: 3px 3px 10px  black;
+  padding: 0px;
+  margin: 0px;
+  border-radius: 10px
+}
+@media screen and (min-width: 1200px) {
+  .divMinichat{
+    /* position: absolute; */
+    float: right;
+    bottom: 0px;
+    right: 300px;
+    width: 252px;
+    height: 294px;
+    background-color: #8176c3;
+    border: 1px solid #222269;
+    position: sticky;
+  }
+
+  .barraDeMenu{
+    width: 100%;
+    height: 30px;
+    background-color: #222269;
+    align-items: center;
+    text-align: right;
+    padding-right: 3px;
+    /* overflow:hidden; */
+  }
+  .barraDeMenu img{
+    width: 10%;
+    margin-right:2px;
+  }
+  .barraDeMenu img:hover{
+    cursor: pointer;
+  }
+  .divTextoMinichat{
+
+    overflow:auto;
+    height: 230px;
+  }
+  .divEnviarMinichat{
+    padding: 1px;
+    min-width: 30px;
+    max-width: 240px;
+    background-color: black;
+    /* width: auto;
+    height: auto; */
+    border-radius: 10px 0px 0px 10px;
+    /* text-align: right; */
+    float: right;
+    /* overflow:hidden; */
+    word-wrap: break-word;
+    border: 1px solid #FFF;
+    text-align: center;
+    /* padding-top: 8px; */
+    color: white;
+  }
+
+
+  .divReceberMinichat{
+
+    text-align: center;
+    padding: 1px;
+    min-width: 30px;
+    max-width: 200px;
+    background-color: white;
+    /* width: auto;
+    height: auto; */
+    color: black;
+    border-radius: 0px 10px 10px 0px;
+    float: left;
+    word-wrap: break-word;
+    border: 1px solid #222269;
+    left: 0px;
+    /* padding-top: 8px; */
+  }
+  .camposMinichat{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border: 1px solid #222269;
+    background-color: #000;
+  }
+  .nickMinichat{
+    position: absolute;
+    left:0px;
+  }
+}
+.divImagemBuscarUsuario{
+  background-color: white;
+}
+.divUsuarios{
+  background-color: white;
+  color: black;
+  padding: 10px;
+  border: 2px solid #361459;
+
+}
+.usuariosItens{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.formBuscaUsuario{
+  margin-left: auto;
+  margin-right: auto;
+
+}
+
+/* .myModal{
+color: white;
+
+width: 80%;
+height: 400px;
+background-color: #6a5acd;
+margin-left: 10%;
+margin-right: 10%;
+top: 20%;
+position: absolute;
+border: 5px solid #f5f5f5;
+box-shadow:  0 0 0 20px #6a5acd;
+border-radius: 10px;
+padding-top: 60px;
+} */
+
+.myModal{/* MODAL */
+  color: white;
+  /* text-align: center; */
+  width: 80%;
+  height: 400px;
+  background-color: #6a5acd;
+  margin-left: 10%;
+  margin-right: 10%;
+  top: 20%;
+  position: absolute;
+  border: 5px solid #f5f5f5;
+  box-shadow:  0 0 0 20px #6a5acd;
+  border-radius: 10px;
+  padding-top: 60px;
+}
+.myModal img{/* MODAL */
+  width: 50px;
+  right: 0px;
+  top: 0px;
+  position: absolute;
+  cursor: pointer;
+}
+
+.modalSucesso{/* MODAL */
+  width: 30%;
+  text-align: center;
+  background-color: #008000;
+  position: absolute;
+  border: 5px solid #f5f5f5;
+  box-shadow:  0 0 0 20px #008000;
+  border-radius: 10px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 60px;
+  padding-right: 60px;
+  top: 20%;
+  left: 35%;
+  word-wrap: break-word;
+}
+/* .modalAmigos{
+margin-left: 35%;
+margin-right: 35%;
+top: 12%;
+position: absolute;
+
+background-color: green;
+border: 5px solid white;
+box-shadow:  0 0 0 10px green;
+border-radius: 10px;
+} */
+#divAmigoGrupo{
+  /* height: 270px;s */
+  height: 100px;
+  overflow-y: auto;
+  border: 2px solid white;
+  border-radius: 10px;
+  height: 110px;
+}
+
+.labelImgAdiconarAmigoGrupo{
+  width: 54px;
+  height: 50px;
+  border: 2px solid black;
+  border-radius: 50%;
+  overflow: hidden;
+  position: relative;
+}
+.imgAdiconarAmigoGrupo{
+  position: absolute;
+  margin: auto;
+  width: 100%;
+  /* height: 100%; */
+}
+.labelImgAdiconarAmigoGrupo:hover{
+  -moz-transform: scale(1.8);
+  -webkit-transform: scale(1.8);
+  transform: scale(1.8);
+}
+
+/* input[type="checkbox"]:checked +label{
+border-color: green;
+color: green
+} */
+
+.inputAdiconarAmigoGrupo:checked +label p{
+  color: green;
+  cursor: pointer;
+  text-decoration: underline;
+}
+/* STYLE CARDOSO */
+/* ////////////////////////////////////////////////// Postagens  ////////////////////////////////////////////////// */
+#postagem, #postagemPessoal{
+  background-color: white;
+  width: auto;
+  height: auto;
+  box-shadow: #5f5f5f 12px 5px 10px;
+  position: relative;
+}
+.tituloPostagem, .textoDenuncia{
+  font-size: 12px;
+  margin-left: 8px;
+  margin-right: 5px;
+  text-align: justify;
+  word-wrap: break-word;
+  color: black;
+}
+.imagemPostagem{
+  width: 100%;
+  height: auto;
+  border-radius:  5px;
+  cursor: zoom-in;
+}
+.imagemPostagemModal{
+  width: 100%;
+  height: auto;
+  border-radius:  5px;
+  cursor: zoom-in;
+}
+#boryPostagem{
+  background-color: rgb(152, 238, 130);
+  font-family: 'Courier New', Courier, monospace;
+}
+.divDividir{
+  margin-bottom: 15px;
+  background-color: #343a40;
+  width: auto;
+  box-shadow:  black 5px 1px 25px;
+  padding: 4px;
+}
+.espacoPostagem{
+  padding: 8px;
+}
+.btnlikes{
+  font-size: 11px;
+  border-radius: 25px;
+  margin: 3px 0px 3px 0px;
+  width: 100%;
+  height: 25px;
+  cursor: pointer;
+  box-shadow: #5f5f5f 0px 1px 1px;
+}
+.btnComentar{
+  float: right;
+  font-size: 11px;
+  border-radius: 25px;
+  /* width: 23%; */
+  /* height: 25px; */
+  cursor: pointer;
+  box-shadow: #5f5f5f 0px 1px 1px;
+}
+.igmLike{
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.igmDeslike{
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+.igmComentario{
+  height: 15px;
+  cursor: pointer;
+  margin-left: 5px;
+}
+#btnEnviarDenuncia, #btnSairDenuncia{
+  width: 100%;
+}
+
+.imgEmojinPostagem{
+  height: 20px;
+  padding-left: 5px;
+}
+.imgMenu{
+  height: 20px;
+  float: right;
+}
+.opcoesPostagem{
+  margin-top: 25px;
+  position: absolute;
+  padding: 5px;
+}
+.btnOpcoes{
+  width: 100%;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+.comentario{
+  text-align: justify;
+  word-break: break-all;
+  margin-right: 3ex;
+}
+.telaCompartilhar{
+  background-color: rgba(221, 221, 221, 0.308);
+  padding: 8px;
+  border-radius: 5px;
+  border: groove;
+  border-color: rgba(221, 221, 221, 0.308);
+  margin-bottom: 7px;
+  z-index: -1;
+}
+.imgPerfilPostagem{
+  border-radius: 50%;
+  height: 35px;
+  width: 40px;
+}
+a{
+  cursor: pointer;
+}
+.imgRelogioPostagem{
+  border-radius: 50%;
+  height: 28px;
+}
+.p_relogio{
+  font-size: 11px;
+}
+.tabelaEmojinCaracter button{
+  font-size: 19px;
+  padding: 5px;
+}
+.tabelaEmojinMao button{
+  font-size: 19px;
+  padding: 2px;
+  margin-left: 6px;
+}
+.rowComentario{
+  margin-left: 0px;
+  margin-right: 0px;
+}
+.rowComentario:hover{
+  background-color: rgba(177, 176, 176, 0.231);
+  border-radius: 3%
+}
+.textoConfirmarExcluir{
+  text-align: center;
+}
+#modalExcluir{
+  margin-top: 10%;
+}
+.menuComentario{
+  display: none;
+}
+.txtVisualizarPerfil{
+  color: indigo;
+  cursor:pointer;
+}
+@media only screen and (max-width: 1000px) {
+  .divManterPerfil{
+    background-color: transparent;
+    border-width: 0px;
+  }
+  .divAmigosGrupo{
+    display: none;
+  }
+  .row-1{
+    padding: 10px;
+  }
+}
+.divOpcoesChat{
+  border: solid 1px black;
+}
+img{
+  max-width: 100%;
+  max-height: 100%;
+}
+.divBuscarPostagem{
+  border: solid 1px black;
+  /* background-color: #654EA4; */
+}
+select{
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.divButton2{
+
+
+
+  /* display: table-cell;
+  vertical-align: middle ; */
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  /* margin:0; */
+  /* margin: auto; */
+  margin:0;
+  padding: 0;
+
+}
+.button2{
+
+  width: 75px;
+  height: 25px;
+  text-align: center;
+  line-height: 35px;
+  color: #FFF;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: sans-serif;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 30px;
+  z-index: 1;
+  max-width: 100%;
+  max-height: 100%;
+  height: auto;
+  position:relative;
+  float: left;
+
+
+}
+.button2:hover{
+  animation: animate 8s linear infinite;
+  cursor: pointer;
+}
+@keyframes animate{
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+.button2:before{
+  content: '';
+  position: absolute;
+  top: -5px;
+  left:-5px;
+  right:-5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 40%;
+  border-radius: 40px;
+  filter: blur(20px);
+  opacity: 0;
+  transition: 0.5s;
+}
+.button2:hover:before{
+  filter:blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+.centralizar{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+}
+.nickname{
+  cursor: pointer;
+  word-wrap: break-word;
+}
+.btnTrue{
+  background-color: #497c58;
+  border: solid 1px black;
+  color: white;
+  border-radius: 30px;
+}
+.btnFalse{
+  background-color: #882117;
+  border: solid 1px black;
+  color: white;
+  border-radius: 30px;
+}
+#divAmigo{
+  background-color: #343a40;
+  color: white;
+}
+#divGrupo{
+  background-color: #343a40;
+  color: white;
+}
+.iconSexo{
+  width: 5%;
+}
+.infoOutroPerfil{
+  background-color: white;
+  color: black;
+  border: solid 1px black;
+  padding: 10px;
+  /* max-height: 200px; */
+
+}
+#minhasPostagens{
+  background-color: white;
+  color: black;
+}
+.hrMobile{
+  display: none;
+}
+@media screen and (max-width: 766px) {
+  .hrMobile{
+    display: initial;
+  }
+  .iconSexo{
+    width: 6%;
+  }
+}
+@media screen and (min-width: 1200px){
+  #amigosGrupoChat{
+    display: none
+  }
+}
